@@ -1,0 +1,1487 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+<title>Suyog Dental | Premium Dental Care · Kathmandu</title>
+<meta name="description" content="Suyog Dental - Where artistry meets dental science. Premium dental care, cosmetic dentistry, and smile transformations in Kathmandu.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,600&family=Figtree:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<style>
+/* ─── ROOT VARS ─── */
+:root {
+  --white:#ffffff;
+  --cream:#faf9f7;
+  --cream-2:#f4f1eb;
+  --sky-50:#f0f9ff;
+  --sky-100:#e0f2fe;
+  --sky-200:#bae6fd;
+  --sky-400:#38bdf8;
+  --sky-500:#0ea5e9;
+  --sky-600:#0284c7;
+  --sky-700:#0369a1;
+  --teal-400:#2dd4bf;
+  --teal-500:#14b8a6;
+  --teal-600:#0d9488;
+  --slate-50:#f8fafc;
+  --slate-100:#f1f5f9;
+  --slate-200:#e2e8f0;
+  --slate-300:#cbd5e1;
+  --slate-400:#94a3b8;
+  --slate-500:#64748b;
+  --slate-600:#475569;
+  --slate-700:#334155;
+  --slate-800:#1e293b;
+  --slate-900:#0f172a;
+  --gold:#b8973a;
+  --gold-light:#f0e4b8;
+  --emerald:#10b981;
+  --red:#dc2626;
+  --font-display:'Cormorant Garamond',Georgia,serif;
+  --font-body:'Figtree',sans-serif;
+  --radius-xs:6px;
+  --radius-sm:10px;
+  --radius-md:16px;
+  --radius-lg:22px;
+  --radius-xl:32px;
+  --radius-full:9999px;
+  --shadow-xs:0 1px 3px rgba(0,0,0,.06);
+  --shadow-sm:0 4px 16px rgba(0,0,0,.07);
+  --shadow-md:0 8px 32px rgba(0,0,0,.09);
+  --shadow-lg:0 16px 56px rgba(0,0,0,.12);
+  --shadow-xl:0 28px 80px rgba(0,0,0,.16);
+  --shadow-blue:0 12px 40px rgba(14,165,233,.22);
+  --transition:all .3s cubic-bezier(.4,0,.2,1);
+  --transition-slow:all .55s cubic-bezier(.4,0,.2,1);
+  --nav-h:68px;
+}
+
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;font-size:16px;-webkit-text-size-adjust:100%}
+body{font-family:var(--font-body);color:var(--slate-800);background:var(--white);overflow-x:hidden;line-height:1.7;-webkit-font-smoothing:antialiased}
+img{max-width:100%;height:auto;display:block}
+a{text-decoration:none;color:inherit}
+ul{list-style:none}
+button{cursor:pointer;font-family:var(--font-body);border:none;background:none}
+input,select,textarea{font-family:var(--font-body)}
+
+/* ─── SCROLL ─── */
+::-webkit-scrollbar{width:5px}
+::-webkit-scrollbar-track{background:var(--slate-100)}
+::-webkit-scrollbar-thumb{background:var(--sky-400);border-radius:3px}
+
+/* ─── LAYOUT ─── */
+.container{max-width:1160px;margin:0 auto;padding:0 20px}
+.section{padding:96px 0}
+.section-sm{padding:56px 0}
+.grid-2{display:grid;grid-template-columns:1fr 1fr;gap:56px;align-items:center}
+.grid-3{display:grid;grid-template-columns:repeat(3,1fr);gap:28px}
+
+/* ─── TYPOGRAPHY ─── */
+.display-xl{font-family:var(--font-display);font-size:clamp(2.6rem,4.5vw,3.8rem);font-weight:600;line-height:1.1;letter-spacing:-.01em}
+.display-lg{font-family:var(--font-display);font-size:clamp(2rem,3.2vw,3rem);font-weight:600;line-height:1.18;letter-spacing:-.01em}
+.display-md{font-family:var(--font-display);font-size:clamp(1.4rem,2.2vw,1.9rem);font-weight:600;line-height:1.3}
+.text-gradient{background:linear-gradient(135deg,var(--sky-600),var(--teal-500));-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text}
+.label-pill{display:inline-flex;align-items:center;gap:7px;font-size:.73rem;font-weight:600;letter-spacing:.1em;text-transform:uppercase;color:var(--sky-700);background:var(--sky-50);border:1px solid var(--sky-200);padding:5px 14px;border-radius:var(--radius-full);margin-bottom:18px}
+.label-pill::before{content:'';width:5px;height:5px;background:var(--sky-500);border-radius:50%;flex-shrink:0}
+.body-lg{font-size:1.05rem;line-height:1.8;color:var(--slate-600)}
+.body-md{font-size:.95rem;line-height:1.78;color:var(--slate-600)}
+.body-sm{font-size:.85rem;line-height:1.7;color:var(--slate-500)}
+
+/* ─── BUTTONS ─── */
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;padding:13px 26px;border-radius:var(--radius-full);font-size:.92rem;font-weight:600;transition:var(--transition);border:2px solid transparent;white-space:nowrap;cursor:pointer}
+.btn-primary{background:linear-gradient(135deg,var(--sky-500),var(--teal-500));color:#fff;box-shadow:var(--shadow-blue)}
+.btn-primary:hover{transform:translateY(-2px);box-shadow:0 16px 48px rgba(14,165,233,.35)}
+.btn-outline{background:transparent;color:var(--slate-700);border-color:var(--slate-300)}
+.btn-outline:hover{border-color:var(--sky-400);color:var(--sky-600);background:var(--sky-50)}
+.btn-white{background:#fff;color:var(--sky-700);box-shadow:0 4px 20px rgba(0,0,0,.12)}
+.btn-white:hover{transform:translateY(-2px);box-shadow:0 10px 32px rgba(0,0,0,.18)}
+.btn-lg{padding:16px 34px;font-size:1rem}
+.btn-sm{padding:9px 18px;font-size:.82rem}
+.btn-block{width:100%;display:flex}
+
+/* ─── NAV ─── */
+.nav{position:fixed;top:0;left:0;right:0;z-index:1000;transition:var(--transition);background:rgba(255,255,255,.92);backdrop-filter:blur(20px);-webkit-backdrop-filter:blur(20px);border-bottom:1px solid rgba(226,232,240,.5)}
+.nav.scrolled{box-shadow:0 4px 24px rgba(0,0,0,.08)}
+.nav-inner{max-width:1160px;margin:0 auto;padding:0 20px;height:var(--nav-h);display:flex;align-items:center;justify-content:space-between;gap:16px}
+
+/* Logo */
+.nav-logo{display:flex;align-items:center;gap:10px;flex-shrink:0}
+.logo-mark{width:38px;height:38px;border-radius:10px;background:linear-gradient(135deg,var(--sky-500),var(--teal-500));display:flex;align-items:center;justify-content:center;flex-shrink:0}
+.logo-mark svg{width:20px;height:20px}
+.logo-text{font-family:var(--font-display);font-size:1.28rem;font-weight:700;color:var(--slate-900);letter-spacing:-.01em;line-height:1}
+.logo-text span{color:var(--sky-600)}
+.logo-sub{font-size:.6rem;font-weight:500;letter-spacing:.12em;text-transform:uppercase;color:var(--slate-400);margin-top:1px}
+
+.nav-links{display:flex;align-items:center;gap:2px}
+.nav-link{padding:7px 12px;border-radius:8px;font-size:.87rem;font-weight:500;color:var(--slate-600);transition:var(--transition)}
+.nav-link:hover{color:var(--sky-600);background:var(--sky-50)}
+.nav-right{display:flex;align-items:center;gap:10px}
+.nav-phone{display:flex;align-items:center;gap:6px;font-size:.83rem;font-weight:600;color:var(--slate-700);padding:7px 12px;border-radius:8px;transition:var(--transition)}
+.nav-phone:hover{color:var(--sky-600);background:var(--sky-50)}
+
+/* Hamburger */
+.hamburger{display:none;flex-direction:column;gap:5px;padding:8px;cursor:pointer;border-radius:8px;transition:var(--transition)}
+.hamburger:hover{background:var(--sky-50)}
+.hamburger span{display:block;width:22px;height:2px;background:var(--slate-700);border-radius:2px;transition:var(--transition)}
+.hamburger.open span:nth-child(1){transform:rotate(45deg) translate(5px,5px)}
+.hamburger.open span:nth-child(2){opacity:0}
+.hamburger.open span:nth-child(3){transform:rotate(-45deg) translate(5px,-5px)}
+
+/* Mobile menu */
+.mobile-menu{display:none;position:fixed;top:var(--nav-h);left:0;right:0;background:white;border-bottom:1px solid var(--slate-200);padding:12px 20px 20px;z-index:999;box-shadow:0 20px 60px rgba(0,0,0,.1)}
+.mobile-menu.open{display:block}
+.mobile-menu .nav-link{display:block;padding:11px 14px;font-size:.96rem;border-radius:10px}
+.mobile-menu .btn{width:100%;margin-top:10px}
+
+/* ─── HERO ─── */
+.hero{min-height:100svh;position:relative;overflow:hidden;display:flex;align-items:center;background:linear-gradient(135deg,#e0f2fe 0%,#f0fdfa 50%,#eff6ff 100%)}
+.hero-bg-img{position:absolute;inset:0;z-index:0}
+.hero-bg-img img{width:100%;height:100%;object-fit:cover;object-position:center top;opacity:.18}
+.hero-overlay{position:absolute;inset:0;z-index:1;background:linear-gradient(135deg,rgba(224,242,254,.92) 0%,rgba(240,253,250,.88) 55%,rgba(239,246,255,.85) 100%)}
+.hero-inner{position:relative;z-index:2;width:100%;max-width:1160px;margin:0 auto;padding:calc(var(--nav-h) + 40px) 20px 60px;display:grid;grid-template-columns:1fr 1fr;gap:56px;align-items:center}
+.hero-badge{display:inline-flex;align-items:center;gap:8px;background:rgba(255,255,255,.9);border:1px solid var(--sky-200);border-radius:var(--radius-full);padding:7px 16px;margin-bottom:24px;font-size:.78rem;font-weight:600;color:var(--sky-700);box-shadow:0 4px 16px rgba(14,165,233,.12);backdrop-filter:blur(10px)}
+.badge-dot{width:7px;height:7px;background:#22c55e;border-radius:50%;animation:pulse 2s infinite}
+@keyframes pulse{0%,100%{opacity:1;transform:scale(1)}50%{opacity:.6;transform:scale(1.35)}}
+.hero-title{margin-bottom:20px;color:var(--slate-900)}
+.hero-title em{font-style:italic;color:var(--sky-600)}
+.hero-desc{margin-bottom:36px;max-width:460px}
+.hero-actions{display:flex;align-items:center;gap:12px;flex-wrap:wrap;margin-bottom:44px}
+.hero-stats{display:flex;gap:0;background:rgba(255,255,255,.75);border:1px solid rgba(255,255,255,.9);border-radius:var(--radius-lg);padding:16px 0;backdrop-filter:blur(12px);box-shadow:var(--shadow-sm);flex-wrap:wrap}
+.hero-stat{flex:1;min-width:80px;text-align:center;padding:4px 16px;border-right:1px solid var(--slate-200)}
+.hero-stat:last-child{border-right:none}
+.stat-num{font-family:var(--font-display);font-size:1.6rem;font-weight:700;color:var(--slate-900);line-height:1}
+.stat-label{font-size:.72rem;color:var(--slate-500);margin-top:3px;font-weight:500}
+
+/* Hero image side */
+.hero-visual{position:relative}
+.hero-img-main{border-radius:var(--radius-xl);overflow:hidden;aspect-ratio:4/5;box-shadow:var(--shadow-xl);position:relative}
+.hero-img-main img{width:100%;height:100%;object-fit:cover;object-position:center top}
+.hero-float{position:absolute;background:rgba(255,255,255,.95);border-radius:var(--radius-md);box-shadow:0 12px 40px rgba(0,0,0,.13);backdrop-filter:blur(12px);border:1px solid rgba(255,255,255,.9)}
+.hf-rating{top:22px;right:-18px;padding:12px 18px;animation:floatY 4s ease-in-out infinite}
+.hf-appt{bottom:80px;left:-22px;padding:12px 18px;animation:floatY 4s ease-in-out infinite;animation-delay:2s}
+@keyframes floatY{0%,100%{transform:translateY(0)}50%{transform:translateY(-10px)}}
+.hf-icon{font-size:1.3rem;margin-bottom:3px}
+.hf-label{font-size:.67rem;color:var(--slate-500);font-weight:500}
+.hf-val{font-size:.95rem;font-weight:700;color:var(--slate-900)}
+.hf-stars{color:#f59e0b;font-size:.72rem}
+
+/* ─── TRUST BAR ─── */
+.trust-bar{background:var(--slate-900);padding:18px 0}
+.trust-bar-inner{display:flex;align-items:center;justify-content:center;gap:0;flex-wrap:wrap}
+.trust-item{display:flex;align-items:center;gap:8px;padding:6px 28px;border-right:1px solid rgba(255,255,255,.1);color:rgba(255,255,255,.8);font-size:.82rem;font-weight:500}
+.trust-item:last-child{border-right:none}
+.trust-icon{font-size:1.1rem;flex-shrink:0}
+
+/* ─── ABOUT ─── */
+.about{background:var(--white)}
+.about-img-wrap{position:relative;border-radius:var(--radius-xl);overflow:hidden;box-shadow:var(--shadow-xl)}
+.about-img-wrap img{width:100%;height:100%;object-fit:cover;display:block;aspect-ratio:4/5}
+.about-badge{position:absolute;bottom:24px;right:24px;background:rgba(255,255,255,.97);border-radius:var(--radius-md);padding:18px 22px;box-shadow:0 8px 32px rgba(0,0,0,.12);text-align:center}
+.about-badge-num{font-family:var(--font-display);font-size:2rem;font-weight:700;color:var(--sky-600);line-height:1}
+.about-badge-label{font-size:.75rem;color:var(--slate-500);margin-top:3px}
+.feature-list{margin-top:28px;display:flex;flex-direction:column;gap:16px}
+.feature-item{display:flex;align-items:flex-start;gap:14px}
+.fi-icon{width:42px;height:42px;flex-shrink:0;background:var(--sky-50);border-radius:10px;display:flex;align-items:center;justify-content:center;font-size:1.1rem;border:1px solid var(--sky-100)}
+.fi-text h4{font-size:.92rem;font-weight:600;color:var(--slate-800);margin-bottom:2px}
+.fi-text p{font-size:.83rem;color:var(--slate-500);line-height:1.6}
+
+/* ─── SERVICES ─── */
+.services{background:var(--cream)}
+.services-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:22px;margin-top:52px}
+.svc-card{background:#fff;border-radius:var(--radius-lg);overflow:hidden;border:1px solid var(--slate-100);box-shadow:var(--shadow-sm);transition:var(--transition);cursor:pointer}
+.svc-card:hover{transform:translateY(-6px);box-shadow:var(--shadow-lg);border-color:var(--sky-200)}
+.svc-img{width:100%;aspect-ratio:16/9;overflow:hidden;position:relative}
+.svc-img img{width:100%;height:100%;object-fit:cover;transition:transform .55s ease}
+.svc-card:hover .svc-img img{transform:scale(1.07)}
+.svc-body{padding:22px 22px 24px}
+.svc-icon{font-size:1.6rem;margin-bottom:10px}
+.svc-name{font-size:.97rem;font-weight:700;color:var(--slate-900);margin-bottom:6px}
+.svc-desc{font-size:.83rem;color:var(--slate-500);line-height:1.65;margin-bottom:12px}
+.svc-price{font-size:.85rem;font-weight:600;color:var(--sky-600)}
+.svc-link{display:inline-flex;align-items:center;gap:5px;font-size:.8rem;font-weight:600;color:var(--sky-600);margin-top:8px;transition:var(--transition)}
+.svc-link:hover{gap:9px}
+
+/* ─── TECHNOLOGY ─── */
+.tech{background:var(--slate-900);position:relative;overflow:hidden}
+.tech::before{content:'';position:absolute;inset:0;background:radial-gradient(ellipse 70% 70% at 80% 50%,rgba(14,165,233,.12) 0%,transparent 70%),radial-gradient(ellipse 40% 50% at 10% 80%,rgba(20,184,166,.08) 0%,transparent 60%)}
+.tech-inner{position:relative;z-index:1}
+.tech-grid{display:grid;grid-template-columns:1fr 1fr;gap:56px;align-items:center}
+.tech-text .label-pill{color:var(--sky-400);background:rgba(14,165,233,.1);border-color:rgba(14,165,233,.2)}
+.tech-text h2{color:#fff;margin-bottom:20px}
+.tech-text p{color:rgba(255,255,255,.65);margin-bottom:32px}
+.tech-list{display:flex;flex-direction:column;gap:14px}
+.tech-item{display:flex;align-items:center;gap:14px;background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.08);border-radius:var(--radius-md);padding:14px 18px;transition:var(--transition)}
+.tech-item:hover{background:rgba(255,255,255,.1);border-color:rgba(14,165,233,.3)}
+.tech-icon{font-size:1.5rem;flex-shrink:0}
+.tech-item-text h4{font-size:.9rem;font-weight:600;color:#fff;margin-bottom:2px}
+.tech-item-text p{font-size:.8rem;color:rgba(255,255,255,.5);line-height:1.5}
+.tech-img-side{position:relative;border-radius:var(--radius-xl);overflow:hidden;box-shadow:0 24px 72px rgba(0,0,0,.4)}
+.tech-img-side img{width:100%;height:100%;object-fit:cover;display:block;aspect-ratio:3/4}
+
+/* ─── TEAM ─── */
+.team{background:var(--white)}
+.team-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:24px;margin-top:52px}
+.doctor-card{border-radius:var(--radius-lg);overflow:hidden;border:1px solid var(--slate-100);transition:var(--transition);background:#fff}
+.doctor-card:hover{transform:translateY(-7px);box-shadow:var(--shadow-xl);border-color:var(--sky-200)}
+.doc-img{width:100%;aspect-ratio:3/4;overflow:hidden;background:linear-gradient(135deg,#dbeafe,#ccfbf1)}
+.doc-img img{width:100%;height:100%;object-fit:cover;object-position:top center;transition:transform .55s ease}
+.doctor-card:hover .doc-img img{transform:scale(1.05)}
+.doc-info{padding:18px 18px 22px;border-top:1px solid var(--slate-100)}
+.doc-name{font-family:var(--font-display);font-size:1rem;font-weight:700;color:var(--slate-900)}
+.doc-title{font-size:.77rem;color:var(--sky-600);font-weight:600;margin-top:3px}
+.doc-qual{font-size:.73rem;color:var(--slate-400);margin-top:4px;line-height:1.4}
+.doc-tags{display:flex;flex-wrap:wrap;gap:5px;margin-top:10px}
+.tag{background:var(--sky-50);color:var(--sky-700);padding:3px 9px;border-radius:var(--radius-full);font-size:.68rem;font-weight:600;border:1px solid var(--sky-200)}
+
+/* ─── EXPERIENCE STRIP ─── */
+.experience{background:linear-gradient(135deg,var(--sky-600) 0%,var(--teal-600) 100%);padding:72px 0;position:relative;overflow:hidden}
+.experience::before{content:'';position:absolute;inset:0;background:url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23ffffff' fill-opacity='0.04'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E")}
+.exp-grid{display:grid;grid-template-columns:1fr 1.6fr;gap:64px;align-items:center;position:relative;z-index:1}
+.exp-img-wrap{border-radius:var(--radius-xl);overflow:hidden;box-shadow:0 24px 72px rgba(0,0,0,.25)}
+.exp-img-wrap img{width:100%;display:block;object-fit:cover;aspect-ratio:4/3}
+.exp-content h2{color:#fff;margin-bottom:20px}
+.exp-content p{color:rgba(255,255,255,.8);margin-bottom:36px;font-size:1rem;line-height:1.8}
+.exp-stats{display:grid;grid-template-columns:1fr 1fr;gap:18px}
+.exp-stat-box{background:rgba(255,255,255,.15);border:1px solid rgba(255,255,255,.2);border-radius:var(--radius-md);padding:20px 24px;backdrop-filter:blur(8px)}
+.exp-stat-num{font-family:var(--font-display);font-size:2.2rem;font-weight:700;color:#fff;line-height:1}
+.exp-stat-label{font-size:.78rem;color:rgba(255,255,255,.7);margin-top:4px;font-weight:500}
+
+/* ─── BOOKING ─── */
+.booking{background:var(--cream)}
+.booking-wrap{background:#fff;border-radius:var(--radius-xl);box-shadow:var(--shadow-xl);overflow:hidden}
+.booking-header{background:linear-gradient(135deg,var(--sky-600),var(--teal-600));padding:36px 44px;color:#fff}
+.booking-header h2{font-family:var(--font-display);font-size:1.75rem;font-weight:700;color:#fff;margin-bottom:6px}
+.booking-header p{color:rgba(255,255,255,.75);font-size:.9rem}
+.booking-tabs{display:flex;gap:0;background:rgba(255,255,255,.12);border-radius:10px;margin-top:22px;overflow:hidden}
+.btab{flex:1;padding:9px 12px;text-align:center;font-size:.76rem;font-weight:600;color:rgba(255,255,255,.55);transition:var(--transition);cursor:pointer;border:none;background:transparent;font-family:var(--font-body)}
+.btab.active{background:rgba(255,255,255,.22);color:#fff;border-radius:8px}
+.booking-body{padding:40px 44px}
+.bsection{display:none}
+.bsection.active{display:block}
+.form-grid{display:grid;grid-template-columns:1fr 1fr;gap:18px}
+.form-group{display:flex;flex-direction:column;gap:5px}
+.form-group.full{grid-column:1/-1}
+.form-label{font-size:.82rem;font-weight:600;color:var(--slate-700)}
+.form-label span{color:#ef4444;margin-left:2px}
+.form-input,.form-select,.form-textarea{width:100%;padding:11px 14px;border:1.5px solid var(--slate-200);border-radius:var(--radius-sm);font-family:var(--font-body);font-size:.92rem;color:var(--slate-800);transition:var(--transition);background:var(--slate-50);outline:none}
+.form-input:focus,.form-select:focus,.form-textarea:focus{border-color:var(--sky-400);background:#fff;box-shadow:0 0 0 3px rgba(14,165,233,.1)}
+.form-textarea{resize:vertical;min-height:90px}
+.ssi-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin:6px 0}
+.ssi{border:1.5px solid var(--slate-200);border-radius:var(--radius-sm);padding:13px 10px;text-align:center;cursor:pointer;transition:var(--transition);background:var(--slate-50)}
+.ssi:hover{border-color:var(--sky-300);background:var(--sky-50)}
+.ssi.selected{border-color:var(--sky-500);background:var(--sky-50);color:var(--sky-700)}
+.ssi input{display:none}
+.ssi-ic{font-size:1.5rem;margin-bottom:5px}
+.ssi-nm{font-size:.75rem;font-weight:600;color:var(--slate-700)}
+.date-grid{display:grid;grid-template-columns:repeat(7,1fr);gap:7px;margin:6px 0}
+.date-btn{border:1.5px solid var(--slate-200);border-radius:var(--radius-sm);padding:9px 3px;text-align:center;cursor:pointer;transition:var(--transition);background:var(--slate-50);font-size:.76rem;width:100%;font-family:var(--font-body)}
+.date-btn:hover{border-color:var(--sky-400);background:var(--sky-50)}
+.date-btn.selected{border-color:var(--sky-500);background:var(--sky-500);color:#fff}
+.date-btn.disabled{opacity:.35;cursor:not-allowed}
+.date-day{font-size:.63rem;color:var(--slate-400);margin-bottom:2px}
+.date-btn.selected .date-day{color:rgba(255,255,255,.7)}
+.date-num{font-weight:700;font-size:.9rem}
+.time-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:8px;margin:6px 0}
+.time-btn{border:1.5px solid var(--slate-200);border-radius:var(--radius-sm);padding:9px 6px;text-align:center;cursor:pointer;transition:var(--transition);background:var(--slate-50);font-size:.82rem;font-weight:600;color:var(--slate-700);width:100%;font-family:var(--font-body)}
+.time-btn:hover{border-color:var(--sky-400);background:var(--sky-50)}
+.time-btn.selected{border-color:var(--sky-500);background:var(--sky-500);color:#fff}
+.time-btn.unavailable{opacity:.3;cursor:not-allowed;background:var(--slate-100)}
+.booking-nav{display:flex;justify-content:space-between;align-items:center;margin-top:28px;gap:12px}
+.step-ind{font-size:.8rem;color:var(--slate-400);font-weight:500}
+.conf-box{background:linear-gradient(135deg,var(--sky-50),rgba(240,253,250,.8));border:1.5px solid var(--sky-200);border-radius:var(--radius-lg);padding:28px;text-align:center;margin-bottom:24px}
+.conf-icon{font-size:2.6rem;margin-bottom:10px}
+.conf-rows{background:var(--slate-50);border-radius:var(--radius-md);padding:20px;border:1px solid var(--slate-200);margin-bottom:20px}
+.conf-row{display:flex;justify-content:space-between;padding:9px 0;border-bottom:1px solid var(--slate-100)}
+.conf-row:last-child{border-bottom:none}
+.conf-k{font-size:.82rem;color:var(--slate-500)}
+.conf-v{font-size:.82rem;font-weight:600;color:var(--slate-800)}
+
+/* ─── TESTIMONIALS ─── */
+.testimonials{background:var(--white)}
+.testi-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:22px;margin-top:52px}
+.testi-card{background:var(--slate-50);border-radius:var(--radius-lg);padding:28px;border:1px solid var(--slate-100);transition:var(--transition);position:relative}
+.testi-card:hover{background:#fff;box-shadow:var(--shadow-lg);transform:translateY(-4px)}
+.testi-quote{font-family:var(--font-display);font-size:2.8rem;line-height:1;color:var(--sky-200);margin-bottom:10px}
+.testi-text{font-size:.9rem;line-height:1.8;color:var(--slate-600);margin-bottom:20px;font-style:italic}
+.testi-author{display:flex;align-items:center;gap:11px}
+.testi-avatar{width:42px;height:42px;border-radius:50%;overflow:hidden;flex-shrink:0;background:linear-gradient(135deg,#bfdbfe,#99f6e4)}
+.testi-avatar img{width:100%;height:100%;object-fit:cover}
+.testi-name{font-size:.87rem;font-weight:700;color:var(--slate-900)}
+.testi-role{font-size:.74rem;color:var(--slate-400)}
+.testi-stars{color:#f59e0b;font-size:.75rem;margin-bottom:2px}
+.verified{display:inline-flex;align-items:center;gap:5px;background:var(--sky-50);border:1px solid var(--sky-200);border-radius:var(--radius-full);padding:3px 10px;font-size:.7rem;font-weight:600;color:var(--sky-700);margin-bottom:10px}
+.rating-summary{text-align:center;margin-top:48px}
+.rating-strip{display:inline-flex;gap:0;align-items:center;background:var(--sky-50);border:1px solid var(--sky-200);border-radius:var(--radius-lg);padding:24px 0;flex-wrap:wrap;justify-content:center}
+.rs-item{flex:none;text-align:center;padding:8px 32px;border-right:1px solid var(--slate-200)}
+.rs-item:last-child{border-right:none}
+.rs-num{font-family:var(--font-display);font-size:2.6rem;font-weight:700;color:var(--slate-900);line-height:1}
+.rs-label{font-size:.75rem;color:var(--slate-500);margin-top:4px}
+
+/* ─── GALLERY ─── */
+.gallery{background:var(--cream)}
+.gallery-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin-top:52px}
+.gal-item{border-radius:var(--radius-md);overflow:hidden;position:relative;cursor:pointer}
+.gal-item img{width:100%;aspect-ratio:4/3;object-fit:cover;display:block;transition:transform .55s ease}
+.gal-item:hover img{transform:scale(1.06)}
+.gal-overlay{position:absolute;inset:0;background:linear-gradient(to top,rgba(14,165,233,.85) 0%,transparent 60%);opacity:0;transition:var(--transition);display:flex;align-items:flex-end;padding:20px}
+.gal-item:hover .gal-overlay{opacity:1}
+.gal-text{color:#fff;font-size:.85rem;font-weight:600}
+.gal-text span{display:block;font-size:.73rem;font-weight:400;opacity:.8;margin-top:2px}
+.ba-label-wrap{position:absolute;top:10px;left:0;right:0;display:flex;justify-content:space-between;padding:0 12px;pointer-events:none}
+.ba-pill{background:rgba(0,0,0,.55);color:#fff;font-size:.65rem;font-weight:700;letter-spacing:.08em;text-transform:uppercase;padding:3px 9px;border-radius:var(--radius-full);backdrop-filter:blur(6px)}
+
+/* ─── PRICING ─── */
+.pricing{background:var(--white)}
+.pricing-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:24px;margin-top:52px}
+.pricing-card{border-radius:var(--radius-lg);padding:36px 30px;border:1.5px solid var(--slate-200);position:relative;transition:var(--transition);background:#fff}
+.pricing-card:hover{transform:translateY(-6px);box-shadow:var(--shadow-xl);border-color:var(--sky-200)}
+.pricing-card.featured{border-color:var(--sky-400);background:linear-gradient(160deg,var(--sky-50),rgba(240,253,250,.5));box-shadow:0 20px 60px rgba(14,165,233,.15)}
+.p-badge{position:absolute;top:-13px;left:50%;transform:translateX(-50%);background:linear-gradient(135deg,var(--sky-500),var(--teal-500));color:#fff;padding:5px 18px;border-radius:var(--radius-full);font-size:.72rem;font-weight:700;white-space:nowrap}
+.p-name{font-family:var(--font-display);font-size:1.18rem;font-weight:700;color:var(--slate-900);margin-bottom:6px}
+.p-desc{font-size:.83rem;color:var(--slate-500);margin-bottom:20px;line-height:1.6}
+.p-price{display:flex;align-items:baseline;gap:4px;margin-bottom:24px}
+.p-currency{font-size:1rem;font-weight:700;color:var(--sky-600)}
+.p-amount{font-family:var(--font-display);font-size:2.4rem;font-weight:700;color:var(--slate-900);line-height:1}
+.p-period{font-size:.82rem;color:var(--slate-400)}
+.p-features{margin-bottom:28px;display:flex;flex-direction:column;gap:9px}
+.p-feat{display:flex;align-items:center;gap:9px;font-size:.85rem;color:var(--slate-600)}
+.p-check{color:#22c55e;font-size:.95rem;flex-shrink:0}
+.p-cross{color:var(--slate-300);font-size:.95rem;flex-shrink:0}
+
+/* ─── FAQ ─── */
+.faq{background:var(--cream)}
+.faq-list{max-width:780px;margin:52px auto 0;display:flex;flex-direction:column;gap:10px}
+.faq-item{background:#fff;border-radius:var(--radius-md);border:1px solid var(--slate-100);overflow:hidden;box-shadow:var(--shadow-xs);transition:var(--transition)}
+.faq-item.open{border-color:var(--sky-200)}
+.faq-q{width:100%;padding:18px 22px;display:flex;align-items:center;justify-content:space-between;gap:14px;background:none;font-family:var(--font-body);font-size:.92rem;font-weight:600;color:var(--slate-800);text-align:left;cursor:pointer;transition:var(--transition)}
+.faq-q:hover{color:var(--sky-600)}
+.faq-ic{font-size:1.1rem;color:var(--sky-500);transition:var(--transition);flex-shrink:0}
+.faq-item.open .faq-ic{transform:rotate(45deg)}
+.faq-a{max-height:0;overflow:hidden;transition:max-height .4s ease;padding:0 22px}
+.faq-item.open .faq-a{max-height:300px;padding:0 22px 18px}
+.faq-a p{font-size:.87rem;color:var(--slate-500);line-height:1.8}
+
+/* ─── EMERGENCY ─── */
+.emergency{background:linear-gradient(135deg,#dc2626,#b91c1c);position:relative;overflow:hidden}
+.emergency::before{content:'';position:absolute;inset:0;background:radial-gradient(ellipse at top right,rgba(239,68,68,.4),transparent 60%)}
+.emer-inner{position:relative;z-index:1;text-align:center}
+.emer-inner h2{font-family:var(--font-display);font-size:clamp(1.8rem,3vw,2.4rem);font-weight:700;color:#fff;margin-bottom:14px}
+.emer-inner p{color:rgba(255,255,255,.82);font-size:1rem;margin-bottom:30px;max-width:560px;margin-left:auto;margin-right:auto}
+.emer-actions{display:flex;justify-content:center;gap:14px;flex-wrap:wrap}
+.btn-emer{background:#fff;color:#dc2626;padding:14px 30px;border-radius:var(--radius-full);font-weight:700;font-size:.97rem;display:inline-flex;align-items:center;gap:9px;transition:var(--transition);box-shadow:0 8px 28px rgba(0,0,0,.2)}
+.btn-emer:hover{transform:translateY(-2px);box-shadow:0 14px 40px rgba(0,0,0,.25)}
+.btn-emer-ghost{background:rgba(255,255,255,.15);color:#fff;border:2px solid rgba(255,255,255,.45)}
+.btn-emer-ghost:hover{background:rgba(255,255,255,.25)}
+
+/* ─── CONTACT ─── */
+.contact{background:var(--white)}
+.contact-grid{display:grid;grid-template-columns:1fr 1fr;gap:56px;align-items:start}
+.map-wrap{border-radius:var(--radius-lg);overflow:hidden;aspect-ratio:16/11;position:relative;box-shadow:var(--shadow-lg)}
+.map-wrap img{width:100%;height:100%;object-fit:cover;display:block}
+.map-pin-overlay{position:absolute;inset:0;display:flex;align-items:center;justify-content:center;flex-direction:column;gap:10px;background:linear-gradient(to bottom,rgba(14,165,233,.08),rgba(14,165,233,.04))}
+.map-card{background:rgba(255,255,255,.96);border-radius:var(--radius-md);padding:14px 20px;box-shadow:0 8px 28px rgba(0,0,0,.12);text-align:center;backdrop-filter:blur(10px)}
+.map-card-name{font-weight:700;font-size:.9rem;color:var(--slate-900)}
+.map-card-addr{font-size:.76rem;color:var(--slate-500);margin-top:2px}
+.map-card-link{display:inline-flex;align-items:center;gap:5px;font-size:.76rem;font-weight:600;color:var(--sky-600);margin-top:6px}
+.contact-details{display:flex;flex-direction:column;gap:22px}
+.ci{display:flex;gap:14px;align-items:flex-start}
+.ci-icon{width:46px;height:46px;flex-shrink:0;background:var(--sky-50);border-radius:12px;display:flex;align-items:center;justify-content:center;font-size:1.2rem;border:1px solid var(--sky-100)}
+.ci-text h4{font-size:.87rem;font-weight:700;color:var(--slate-800);margin-bottom:4px}
+.ci-text p,.ci-text a{font-size:.83rem;color:var(--slate-500);line-height:1.65}
+.ci-text a:hover{color:var(--sky-600)}
+.contact-form-wrap{background:var(--slate-50);border-radius:var(--radius-lg);padding:32px;border:1px solid var(--slate-100)}
+.contact-form-wrap h3{font-family:var(--font-display);font-size:1.35rem;font-weight:700;color:var(--slate-900);margin-bottom:22px}
+
+/* ─── FLOAT ACTIONS ─── */
+.floating-actions{position:fixed;bottom:24px;right:20px;z-index:800;display:flex;flex-direction:column;gap:10px}
+.fab{width:52px;height:52px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:1.3rem;cursor:pointer;transition:var(--transition);text-decoration:none;box-shadow:0 6px 20px rgba(0,0,0,.18)}
+.fab-wa{background:#25d366;color:#fff}
+.fab-wa:hover{transform:scale(1.12);box-shadow:0 10px 30px rgba(37,211,102,.4)}
+.fab-ph{background:var(--sky-500);color:#fff}
+.fab-ph:hover{transform:scale(1.12);box-shadow:0 10px 30px rgba(14,165,233,.4)}
+
+/* ─── FOOTER ─── */
+.footer{background:var(--slate-900);color:#fff;padding:64px 0 0}
+.footer-grid{display:grid;grid-template-columns:1.8fr 1fr 1fr 1.4fr;gap:44px;padding-bottom:44px}
+.footer-brand-wrap{display:flex;flex-direction:column;gap:14px}
+.footer-logo{display:flex;align-items:center;gap:10px}
+.footer-logo-mark{width:36px;height:36px;border-radius:9px;background:linear-gradient(135deg,var(--sky-500),var(--teal-500));display:flex;align-items:center;justify-content:center;font-size:1.2rem}
+.footer-logo-text{font-family:var(--font-display);font-size:1.2rem;font-weight:700}
+.footer-logo-text span{color:var(--sky-400)}
+.footer-desc{font-size:.84rem;color:var(--slate-400);line-height:1.75;max-width:270px}
+.footer-social{display:flex;gap:8px}
+.soc-btn{width:36px;height:36px;border-radius:9px;display:flex;align-items:center;justify-content:center;font-size:.9rem;transition:var(--transition);color:var(--slate-400);border:1px solid rgba(255,255,255,.1)}
+.soc-btn:hover{transform:translateY(-2px)}
+.soc-btn.fb:hover{background:#1877f2;color:#fff;border-color:#1877f2}
+.soc-btn.ig:hover{background:#e1306c;color:#fff;border-color:#e1306c}
+.soc-btn.yt:hover{background:#ff0000;color:#fff;border-color:#ff0000}
+.soc-btn.tt:hover{background:#010101;color:#fff;border-color:#010101}
+.footer-h{font-size:.78rem;font-weight:700;color:#fff;letter-spacing:.07em;text-transform:uppercase;margin-bottom:18px}
+.footer-links{display:flex;flex-direction:column;gap:9px}
+.footer-link{font-size:.84rem;color:var(--slate-400);transition:var(--transition)}
+.footer-link:hover{color:var(--sky-400)}
+.hours-list{display:flex;flex-direction:column;gap:7px}
+.hr-row{display:flex;justify-content:space-between;font-size:.82rem}
+.hr-day{color:var(--slate-400)}
+.hr-time{color:var(--slate-300);font-weight:600}
+.hr-row.today .hr-day,.hr-row.today .hr-time{color:var(--sky-400)}
+.footer-emer{margin-top:18px;padding:12px;background:rgba(220,38,38,.1);border:1px solid rgba(220,38,38,.2);border-radius:8px}
+.footer-emer-label{font-size:.72rem;font-weight:700;color:#fca5a5;margin-bottom:3px}
+.footer-emer a{font-size:.85rem;color:#fff;font-weight:600}
+.footer-emer small{display:block;font-size:.68rem;color:var(--slate-500);margin-top:2px}
+.footer-bottom{border-top:1px solid rgba(255,255,255,.07);padding:18px 0;display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:10px}
+.footer-copy{font-size:.78rem;color:var(--slate-500)}
+.footer-legal{display:flex;gap:14px}
+.footer-legal a{font-size:.75rem;color:var(--slate-500);transition:var(--transition)}
+.footer-legal a:hover{color:var(--sky-400)}
+
+/* ─── ANIMATIONS ─── */
+.fade-up{opacity:0;transform:translateY(28px);transition:opacity .65s ease,transform .65s ease}
+.fade-up.visible{opacity:1;transform:translateY(0)}
+.delay-1{transition-delay:.1s}
+.delay-2{transition-delay:.2s}
+.delay-3{transition-delay:.3s}
+.delay-4{transition-delay:.4s}
+
+/* ─── MOBILE ─── */
+@media(max-width:1024px){
+  .team-grid{grid-template-columns:repeat(2,1fr)}
+  .footer-grid{grid-template-columns:1fr 1fr}
+}
+@media(max-width:860px){
+  :root{--nav-h:62px}
+  .hero-inner{grid-template-columns:1fr;padding-top:calc(var(--nav-h) + 28px);gap:32px}
+  .hero-visual{order:-1;max-width:420px;margin:0 auto;width:100%}
+  .hf-rating,.hf-appt{display:none}
+  .grid-2,.tech-grid,.exp-grid,.contact-grid{grid-template-columns:1fr}
+  .tech-img-side{max-height:320px}
+  .tech-img-side img{aspect-ratio:16/9}
+  .exp-img-wrap{max-height:280px}
+  .exp-img-wrap img{aspect-ratio:16/9}
+  .services-grid,.testi-grid,.pricing-grid{grid-template-columns:1fr 1fr}
+  .gallery-grid{grid-template-columns:1fr 1fr}
+  .booking-body{padding:28px 22px}
+  .booking-header{padding:24px 22px}
+  .form-grid{grid-template-columns:1fr}
+  .section{padding:68px 0}
+  .hero-stats{gap:0}
+  .about-img-wrap img{aspect-ratio:4/3}
+}
+@media(max-width:600px){
+  .nav-links,.nav-phone{display:none}
+  .hamburger{display:flex}
+  .services-grid,.testi-grid,.pricing-grid,.gallery-grid,.team-grid{grid-template-columns:1fr}
+  .exp-stats{grid-template-columns:1fr 1fr}
+  .ssi-grid{grid-template-columns:repeat(2,1fr)}
+  .time-grid{grid-template-columns:repeat(3,1fr)}
+  .date-grid{grid-template-columns:repeat(4,1fr)}
+  .footer-grid{grid-template-columns:1fr}
+  .emer-actions{flex-direction:column;align-items:center}
+  .section{padding:52px 0}
+  .container{padding:0 16px}
+  .booking-tabs{display:none}
+  .hero-stats .hero-stat{border-right:none;border-bottom:1px solid var(--slate-200)}
+  .hero-stats .hero-stat:last-child{border-bottom:none}
+  .hero-stats{flex-direction:column;gap:0}
+  .trust-bar-inner{flex-direction:column;gap:0}
+  .trust-item{border-right:none;border-bottom:1px solid rgba(255,255,255,.08);width:100%;justify-content:center;padding:8px 16px}
+  .trust-item:last-child{border-bottom:none}
+  .rs-item{padding:8px 20px}
+  .rating-strip{flex-direction:column;border-radius:var(--radius-lg)}
+  .rs-item{border-right:none;border-bottom:1px solid var(--slate-200);width:100%}
+  .rs-item:last-child{border-bottom:none}
+  .footer-bottom{flex-direction:column;text-align:center}
+  .nav-right .btn-sm{padding:8px 14px;font-size:.8rem}
+}
+@media(max-width:380px){
+  .display-xl{font-size:2.2rem}
+  .btn-lg{padding:14px 24px;font-size:.92rem}
+  .hero-actions{flex-direction:column;align-items:stretch}
+  .hero-actions .btn{width:100%;justify-content:center}
+  .date-grid{grid-template-columns:repeat(4,1fr)}
+}
+</style>
+</head>
+<body>
+
+<!-- ─── NAV ─── -->
+<nav class="nav" id="navbar">
+  <div class="nav-inner">
+    <!-- LOGO -->
+    <a href="#home" class="nav-logo">
+      <div class="logo-mark">
+        <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M12 3C9.2 3 7 5 7 7.5c0 1.5.6 2.8 1.4 3.9.9 1.2 1.6 2.7 1.6 4.6 0 1.2.7 2.2 1.7 2.7L12 22l.3-3.3c1-.5 1.7-1.5 1.7-2.7 0-1.9.7-3.4 1.6-4.6.8-1.1 1.4-2.4 1.4-3.9C17 5 14.8 3 12 3z" fill="white" stroke="white" stroke-width=".3" stroke-linejoin="round"/>
+          <circle cx="12" cy="7.5" r="1.5" fill="rgba(255,255,255,0.4)"/>
+        </svg>
+      </div>
+      <div>
+        <div class="logo-text">Suyog<span> Dental</span></div>
+        <div class="logo-sub">Premium Care · Kathmandu</div>
+      </div>
+    </a>
+    <!-- LINKS -->
+    <nav class="nav-links" role="navigation">
+      <a href="#about" class="nav-link">About</a>
+      <a href="#services" class="nav-link">Services</a>
+      <a href="#team" class="nav-link">Team</a>
+      <a href="#testimonials" class="nav-link">Reviews</a>
+      <a href="#pricing" class="nav-link">Pricing</a>
+      <a href="#contact" class="nav-link">Contact</a>
+    </nav>
+    <div class="nav-right">
+      <a href="tel:+977980000001" class="nav-phone">📞 +977-980-000-001</a>
+      <a href="#booking" class="btn btn-primary btn-sm">Book Now</a>
+    </div>
+    <button class="hamburger" id="hamburger" aria-label="Toggle menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</nav>
+
+<!-- Mobile menu -->
+<div class="mobile-menu" id="mobileMenu">
+  <a href="#about" class="nav-link">About</a>
+  <a href="#services" class="nav-link">Services</a>
+  <a href="#team" class="nav-link">Our Team</a>
+  <a href="#testimonials" class="nav-link">Reviews</a>
+  <a href="#pricing" class="nav-link">Pricing</a>
+  <a href="#faq" class="nav-link">FAQ</a>
+  <a href="#contact" class="nav-link">Contact</a>
+  <a href="#booking" class="btn btn-primary">📅 Book Appointment</a>
+</div>
+
+<!-- ─── HERO ─── -->
+<section class="hero" id="home">
+  <div class="hero-bg-img" aria-hidden="true">
+    <img src="https://images.unsplash.com/photo-1606811841689-23dfddce3e95?w=1600&auto=format&fit=crop&q=80" alt="" loading="eager">
+  </div>
+  <div class="hero-overlay" aria-hidden="true"></div>
+  <div class="hero-inner">
+    <div class="hero-content">
+      <div class="hero-badge">
+        <span class="badge-dot"></span>
+        Now accepting new patients · Kathmandu
+      </div>
+      <h1 class="display-xl hero-title fade-up">
+        Your Smile,<br>
+        <em>Our Masterpiece</em>
+      </h1>
+      <p class="body-lg hero-desc fade-up delay-1">
+        Experience world-class dental care where precision meets artistry. From routine cleanings to complete smile transformations — we craft confidence, one smile at a time.
+      </p>
+      <div class="hero-actions fade-up delay-2">
+        <a href="#booking" class="btn btn-primary btn-lg">📅 Book Appointment</a>
+        <a href="#services" class="btn btn-outline btn-lg">Explore Services →</a>
+      </div>
+      <div class="hero-stats fade-up delay-3">
+        <div class="hero-stat">
+          <div class="stat-num">15+</div>
+          <div class="stat-label">Years Experience</div>
+        </div>
+        <div class="hero-stat">
+          <div class="stat-num">8,500+</div>
+          <div class="stat-label">Happy Patients</div>
+        </div>
+        <div class="hero-stat">
+          <div class="stat-num">4.97⭐</div>
+          <div class="stat-label">Patient Rating</div>
+        </div>
+        <div class="hero-stat">
+          <div class="stat-num">12</div>
+          <div class="stat-label">Specialists</div>
+        </div>
+      </div>
+    </div>
+    <div class="hero-visual fade-up delay-1">
+      <div class="hero-img-main">
+        <img src="https://images.unsplash.com/photo-1629909613654-28e377c37b09?w=900&auto=format&fit=crop&q=85&crop=faces" alt="Professional dental treatment at Suyog Dental" loading="eager">
+      </div>
+      <div class="hero-float hf-rating">
+        <div class="hf-icon">✨</div>
+        <div class="hf-label">Smile Score</div>
+        <div class="hf-val">Perfect</div>
+        <div class="hf-stars">★★★★★</div>
+      </div>
+      <div class="hero-float hf-appt">
+        <div class="hf-icon">📅</div>
+        <div class="hf-label">Next Available</div>
+        <div class="hf-val">Today, 3 PM</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ─── TRUST BAR ─── -->
+<div class="trust-bar">
+  <div class="container">
+    <div class="trust-bar-inner">
+      <div class="trust-item"><span class="trust-icon">🏅</span> ISO Certified Clinic</div>
+      <div class="trust-item"><span class="trust-icon">🦷</span> NDA Member</div>
+      <div class="trust-item"><span class="trust-icon">🩺</span> Internationally Trained Dentists</div>
+      <div class="trust-item"><span class="trust-icon">💳</span> 0% EMI Available</div>
+      <div class="trust-item"><span class="trust-icon">🚨</span> Emergency Care 7 Days</div>
+    </div>
+  </div>
+</div>
+
+<!-- ─── ABOUT ─── -->
+<section class="about section" id="about">
+  <div class="container">
+    <div class="grid-2">
+      <div class="about-img-wrap fade-up">
+        <img src="https://images.unsplash.com/photo-1628177142898-93e36e4e3a50?w=900&auto=format&fit=crop&q=85" alt="Suyog Dental clinic interior – clean, modern, welcoming">
+        <div class="about-badge">
+          <div class="about-badge-num">15+</div>
+          <div class="about-badge-label">Years of Excellence</div>
+        </div>
+      </div>
+      <div class="fade-up delay-2">
+        <span class="label-pill">About Our Clinic</span>
+        <h2 class="display-lg" style="margin-bottom:18px;">Where Artistry Meets <span class="text-gradient">Dental Science</span></h2>
+        <p class="body-lg" style="margin-bottom:18px;">Suyog Dental was founded with a singular mission: to make premium dental care accessible, comfortable, and transformative. Located in the heart of Kathmandu, we combine the latest dental technology with a warm, spa-like environment.</p>
+        <p class="body-md" style="margin-bottom:28px;">Our internationally trained team of specialists is dedicated to crafting beautiful, healthy smiles. We believe every patient deserves a personalized treatment experience that respects their time, budget, and dental goals.</p>
+        <div class="feature-list">
+          <div class="feature-item">
+            <div class="fi-icon">🔬</div>
+            <div class="fi-text"><h4>Advanced Digital Technology</h4><p>3D imaging, intraoral scanners, CAD/CAM same-day crowns, and laser dentistry.</p></div>
+          </div>
+          <div class="feature-item">
+            <div class="fi-icon">🛡️</div>
+            <div class="fi-text"><h4>Strict Sterilization Standards</h4><p>ISO-certified protocols and hospital-grade infection control — your safety first.</p></div>
+          </div>
+          <div class="feature-item">
+            <div class="fi-icon">❤️</div>
+            <div class="fi-text"><h4>Patient-First Approach</h4><p>Anxiety-free environment with sedation options for nervous patients.</p></div>
+          </div>
+          <div class="feature-item">
+            <div class="fi-icon">🎓</div>
+            <div class="fi-text"><h4>Internationally Certified Team</h4><p>Specialists trained in USA, UK, Australia, and India with continuous education.</p></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ─── SERVICES ─── -->
+<section class="services section" id="services">
+  <div class="container">
+    <div class="fade-up" style="text-align:center">
+      <span class="label-pill">Our Services</span>
+      <h2 class="display-lg" style="margin-bottom:14px;">Complete Dental Care <span class="text-gradient">Under One Roof</span></h2>
+      <p class="body-lg" style="max-width:580px;margin:0 auto;">From preventive care to complex restorations — addressing every aspect of your oral health and aesthetic goals.</p>
+    </div>
+    <div class="services-grid">
+      <div class="svc-card fade-up delay-1">
+        <div class="svc-img">
+          <img src="https://images.unsplash.com/photo-1588776814546-daab30f310ce?w=600&auto=format&fit=crop&q=80" alt="Dental cleaning and checkup" loading="lazy">
+        </div>
+        <div class="svc-body">
+          <div class="svc-icon">🦷</div>
+          <div class="svc-name">Dental Cleaning &amp; Checkup</div>
+          <div class="svc-desc">Comprehensive oral examination with professional scaling, polishing, and digital X-ray diagnostics.</div>
+          <div class="svc-price">From NPR 1,500</div>
+          <a href="#booking" class="svc-link">Book now →</a>
+        </div>
+      </div>
+      <div class="svc-card fade-up delay-2">
+        <div class="svc-img">
+          <img src="https://images.unsplash.com/photo-1570172619644-dfd03ed5d881?w=600&auto=format&fit=crop&q=80" alt="Professional teeth whitening" loading="lazy">
+        </div>
+        <div class="svc-body">
+          <div class="svc-icon">✨</div>
+          <div class="svc-name">Teeth Whitening</div>
+          <div class="svc-desc">Professional in-chair Zoom whitening and custom home bleaching trays for a dramatically brighter smile.</div>
+          <div class="svc-price">From NPR 8,000</div>
+          <a href="#booking" class="svc-link">Book now →</a>
+        </div>
+      </div>
+      <div class="svc-card fade-up delay-3">
+        <div class="svc-img">
+          <img src="https://images.unsplash.com/photo-1606811971618-4486d14f3f99?w=600&auto=format&fit=crop&q=80" alt="Orthodontics and Invisalign" loading="lazy">
+        </div>
+        <div class="svc-body">
+          <div class="svc-icon">📐</div>
+          <div class="svc-name">Orthodontics &amp; Braces</div>
+          <div class="svc-desc">Metal braces, ceramic braces, and clear Invisalign aligners for perfectly straight teeth at any age.</div>
+          <div class="svc-price">From NPR 45,000</div>
+          <a href="#booking" class="svc-link">Book now →</a>
+        </div>
+      </div>
+      <div class="svc-card fade-up delay-1">
+        <div class="svc-img">
+          <img src="https://images.unsplash.com/photo-1609840114035-3c981b782dfe?w=600&auto=format&fit=crop&q=80" alt="Dental implants" loading="lazy">
+        </div>
+        <div class="svc-body">
+          <div class="svc-icon">🔩</div>
+          <div class="svc-name">Dental Implants</div>
+          <div class="svc-desc">Permanent titanium tooth replacements that look, feel, and function exactly like natural teeth.</div>
+          <div class="svc-price">From NPR 55,000</div>
+          <a href="#booking" class="svc-link">Book now →</a>
+        </div>
+      </div>
+      <div class="svc-card fade-up delay-2">
+        <div class="svc-img">
+          <img src="https://images.unsplash.com/photo-1601462904263-f2fa0c851cb9?w=600&auto=format&fit=crop&q=80" alt="Porcelain veneers" loading="lazy">
+        </div>
+        <div class="svc-body">
+          <div class="svc-icon">💎</div>
+          <div class="svc-name">Porcelain Veneers</div>
+          <div class="svc-desc">Ultra-thin custom shells bonded to front teeth to instantly correct shape, color, and symmetry.</div>
+          <div class="svc-price">From NPR 22,000</div>
+          <a href="#booking" class="svc-link">Book now →</a>
+        </div>
+      </div>
+      <div class="svc-card fade-up delay-3">
+        <div class="svc-img">
+          <img src="https://images.unsplash.com/photo-1559757175-0eb30cd8c063?w=600&auto=format&fit=crop&q=80" alt="Root canal therapy" loading="lazy">
+        </div>
+        <div class="svc-body">
+          <div class="svc-icon">🔧</div>
+          <div class="svc-name">Root Canal Therapy</div>
+          <div class="svc-desc">Painless, precision root canal treatment using rotary endodontics — save your natural tooth.</div>
+          <div class="svc-price">From NPR 6,000</div>
+          <a href="#booking" class="svc-link">Book now →</a>
+        </div>
+      </div>
+      <div class="svc-card fade-up delay-1">
+        <div class="svc-img">
+          <img src="https://images.unsplash.com/photo-1532938911079-1b06ac7ceec7?w=600&auto=format&fit=crop&q=80" alt="Crowns and bridges" loading="lazy">
+        </div>
+        <div class="svc-body">
+          <div class="svc-icon">👑</div>
+          <div class="svc-name">Crowns &amp; Bridges</div>
+          <div class="svc-desc">Custom-crafted porcelain crowns and bridges restoring damaged or missing teeth with perfect aesthetics.</div>
+          <div class="svc-price">From NPR 12,000</div>
+          <a href="#booking" class="svc-link">Book now →</a>
+        </div>
+      </div>
+      <div class="svc-card fade-up delay-2">
+        <div class="svc-img">
+          <img src="https://images.unsplash.com/photo-1607613009820-a29f7bb81c04?w=600&auto=format&fit=crop&q=80" alt="Pediatric dentistry" loading="lazy">
+        </div>
+        <div class="svc-body">
+          <div class="svc-icon">👶</div>
+          <div class="svc-name">Pediatric Dentistry</div>
+          <div class="svc-desc">Gentle, fun dental care for children from 1 to 16. Building healthy habits and positive dental experiences.</div>
+          <div class="svc-price">From NPR 800</div>
+          <a href="#booking" class="svc-link">Book now →</a>
+        </div>
+      </div>
+      <div class="svc-card fade-up delay-3">
+        <div class="svc-img">
+          <img src="https://images.unsplash.com/photo-1581594693702-fbdc51b2763b?w=600&auto=format&fit=crop&q=80" alt="Complete smile makeover" loading="lazy">
+        </div>
+        <div class="svc-body">
+          <div class="svc-icon">😁</div>
+          <div class="svc-name">Smile Makeover</div>
+          <div class="svc-desc">Comprehensive cosmetic treatment combining whitening, veneers, orthodontics, and gum contouring.</div>
+          <div class="svc-price">Custom Quote</div>
+          <a href="#booking" class="svc-link">Get consultation →</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ─── TECHNOLOGY ─── -->
+<section class="tech section" id="technology">
+  <div class="container">
+    <div class="tech-inner">
+      <div class="tech-grid">
+        <div class="tech-text">
+          <span class="label-pill fade-up">Cutting-Edge Technology</span>
+          <h2 class="display-lg fade-up delay-1" style="margin-bottom:18px;">Advanced Equipment for <span style="background:linear-gradient(135deg,var(--sky-400),var(--teal-400));-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;">Superior Results</span></h2>
+          <p class="fade-up delay-2" style="color:rgba(255,255,255,.65);margin-bottom:32px;font-size:.97rem;line-height:1.8;">We invest in the latest dental technology so you experience faster, more comfortable, and more accurate treatments — every single visit.</p>
+          <div class="tech-list">
+            <div class="tech-item fade-up delay-1">
+              <span class="tech-icon">🖥️</span>
+              <div class="tech-item-text"><h4>3D Cone Beam CT Scanning</h4><p>Full-volume 3D X-rays for implants, complex extractions, and orthodontic planning.</p></div>
+            </div>
+            <div class="tech-item fade-up delay-2">
+              <span class="tech-icon">🦾</span>
+              <div class="tech-item-text"><h4>CAD/CAM Same-Day Crowns</h4><p>Custom ceramic crowns designed and milled in-house — done in a single appointment.</p></div>
+            </div>
+            <div class="tech-item fade-up delay-3">
+              <span class="tech-icon">🔦</span>
+              <div class="tech-item-text"><h4>Dental Laser Systems</h4><p>Virtually painless laser treatments for gum therapy, whitening, and minor surgeries.</p></div>
+            </div>
+            <div class="tech-item fade-up delay-4">
+              <span class="tech-icon">📷</span>
+              <div class="tech-item-text"><h4>Digital Intraoral Scanners</h4><p>Accurate 3D impressions without messy putty — faster and more comfortable for patients.</p></div>
+            </div>
+          </div>
+        </div>
+        <div class="tech-img-side fade-up delay-2">
+          <img src="https://images.unsplash.com/photo-1629619282645-23c71e3ec7c6?w=700&auto=format&fit=crop&q=85" alt="Modern dental technology and equipment at Suyog Dental" loading="lazy">
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ─── TEAM ─── -->
+<section class="team section" id="team">
+  <div class="container">
+    <div class="fade-up" style="text-align:center">
+      <span class="label-pill">Our Specialists</span>
+      <h2 class="display-lg" style="margin-bottom:14px;">Meet Your <span class="text-gradient">Expert Team</span></h2>
+      <p class="body-lg" style="max-width:560px;margin:0 auto;">Internationally trained and locally dedicated — our specialists bring global expertise to every smile they craft.</p>
+    </div>
+    <div class="team-grid">
+      <div class="doctor-card fade-up delay-1">
+        <div class="doc-img">
+          <img src="https://images.unsplash.com/photo-1612349317150-e413f6a5b16d?w=500&auto=format&fit=crop&q=80&crop=faces" alt="Dr. Anil Shrestha – Chief Dental Officer" loading="lazy">
+        </div>
+        <div class="doc-info">
+          <div class="doc-name">Dr. Anil Shrestha</div>
+          <div class="doc-title">Chief Dental Officer &amp; Cosmetic Specialist</div>
+          <div class="doc-qual">BDS (Kathmandu), MDS (Mumbai), FICOI (USA)</div>
+          <div class="doc-tags"><span class="tag">Implants</span><span class="tag">Veneers</span><span class="tag">Cosmetic</span></div>
+        </div>
+      </div>
+      <div class="doctor-card fade-up delay-2">
+        <div class="doc-img">
+          <img src="https://images.unsplash.com/photo-1559839734-2b71ea197ec2?w=500&auto=format&fit=crop&q=80&crop=faces" alt="Dr. Priya Maharjan – Orthodontist" loading="lazy">
+        </div>
+        <div class="doc-info">
+          <div class="doc-name">Dr. Priya Maharjan</div>
+          <div class="doc-title">Orthodontist &amp; Invisalign Expert</div>
+          <div class="doc-qual">BDS, MDS Orthodontics (AIIMS Delhi)</div>
+          <div class="doc-tags"><span class="tag">Braces</span><span class="tag">Invisalign</span><span class="tag">Alignment</span></div>
+        </div>
+      </div>
+      <div class="doctor-card fade-up delay-3">
+        <div class="doc-img">
+          <img src="https://images.unsplash.com/photo-1622253692010-333f2da6031d?w=500&auto=format&fit=crop&q=80&crop=faces" alt="Dr. Roshan Thapa – Endodontist" loading="lazy">
+        </div>
+        <div class="doc-info">
+          <div class="doc-name">Dr. Roshan Thapa</div>
+          <div class="doc-title">Endodontist &amp; Oral Surgeon</div>
+          <div class="doc-qual">BDS, MDS Endodontics (KU), MFDS (RCS, UK)</div>
+          <div class="doc-tags"><span class="tag">Root Canal</span><span class="tag">Surgery</span><span class="tag">Extractions</span></div>
+        </div>
+      </div>
+      <div class="doctor-card fade-up delay-4">
+        <div class="doc-img">
+          <img src="https://images.unsplash.com/photo-1594824476967-48c8b964273f?w=500&auto=format&fit=crop&q=80&crop=faces" alt="Dr. Sunita Gurung – Pediatric Dentist" loading="lazy">
+        </div>
+        <div class="doc-info">
+          <div class="doc-name">Dr. Sunita Gurung</div>
+          <div class="doc-title">Pediatric Dentist &amp; Preventive Care</div>
+          <div class="doc-qual">BDS, MDS Pedodontics (Manipal), Cert. Sedation</div>
+          <div class="doc-tags"><span class="tag">Children</span><span class="tag">Sedation</span><span class="tag">Prevention</span></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ─── EXPERIENCE STRIP ─── -->
+<section class="experience" id="experience">
+  <div class="container">
+    <div class="exp-grid">
+      <div class="exp-img-wrap fade-up">
+        <img src="https://images.unsplash.com/photo-1666214280557-f1b5022eb634?w=700&auto=format&fit=crop&q=85" alt="Patient experience at Suyog Dental" loading="lazy">
+      </div>
+      <div class="exp-content fade-up delay-2">
+        <span class="label-pill" style="color:#fff;background:rgba(255,255,255,.15);border-color:rgba(255,255,255,.25)">Patient Experience</span>
+        <h2 class="display-lg" style="color:#fff;margin-bottom:18px;">Designed Around <em style="font-style:italic;color:rgba(255,255,255,.8)">Your Comfort</em></h2>
+        <p>From the moment you walk in, everything at Suyog Dental is designed to put you at ease. Soothing interiors, gentle music, and a team that genuinely cares about your wellbeing — dental anxiety becomes a thing of the past.</p>
+        <div class="exp-stats">
+          <div class="exp-stat-box">
+            <div class="exp-stat-num">8,500+</div>
+            <div class="exp-stat-label">Happy Patients</div>
+          </div>
+          <div class="exp-stat-box">
+            <div class="exp-stat-num">98%</div>
+            <div class="exp-stat-label">Would Recommend</div>
+          </div>
+          <div class="exp-stat-box">
+            <div class="exp-stat-num">2,400+</div>
+            <div class="exp-stat-label">Google Reviews</div>
+          </div>
+          <div class="exp-stat-box">
+            <div class="exp-stat-num">15+</div>
+            <div class="exp-stat-label">Years of Excellence</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ─── BOOKING ─── -->
+<section class="booking section" id="booking">
+  <div class="container">
+    <div class="fade-up" style="text-align:center;margin-bottom:44px;">
+      <span class="label-pill">Easy Booking</span>
+      <h2 class="display-lg" style="margin-bottom:14px;">Book Your Visit <span class="text-gradient">Online</span></h2>
+      <p class="body-lg" style="max-width:540px;margin:0 auto;">Reserve your appointment in under 2 minutes. Choose your service, pick a time, and get an instant confirmation.</p>
+    </div>
+    <div class="booking-wrap fade-up delay-1">
+      <div class="booking-header">
+        <h2>Appointment Booking</h2>
+        <p>Complete the form below — it takes less than 2 minutes</p>
+        <div class="booking-tabs">
+          <button class="btab active" data-step="1">① Service</button>
+          <button class="btab" data-step="2">② Date &amp; Time</button>
+          <button class="btab" data-step="3">③ Your Info</button>
+          <button class="btab" data-step="4">④ Confirm</button>
+        </div>
+      </div>
+      <div class="booking-body">
+        <!-- Step 1 -->
+        <div class="bsection active" id="step-1">
+          <h3 class="display-md" style="margin-bottom:6px;">What service do you need?</h3>
+          <p class="body-sm" style="margin-bottom:22px;">Select the treatment you're interested in. Not sure? Choose Free Consultation.</p>
+          <div class="ssi-grid" id="serviceGrid">
+            <label class="ssi" onclick="selectSvc(this)"><input type="radio" name="svc" value="Dental Cleaning"><div class="ssi-ic">🦷</div><div class="ssi-nm">Cleaning &amp; Checkup</div></label>
+            <label class="ssi" onclick="selectSvc(this)"><input type="radio" name="svc" value="Teeth Whitening"><div class="ssi-ic">✨</div><div class="ssi-nm">Teeth Whitening</div></label>
+            <label class="ssi" onclick="selectSvc(this)"><input type="radio" name="svc" value="Orthodontics"><div class="ssi-ic">📐</div><div class="ssi-nm">Braces / Invisalign</div></label>
+            <label class="ssi" onclick="selectSvc(this)"><input type="radio" name="svc" value="Dental Implants"><div class="ssi-ic">🔩</div><div class="ssi-nm">Dental Implants</div></label>
+            <label class="ssi" onclick="selectSvc(this)"><input type="radio" name="svc" value="Veneers"><div class="ssi-ic">💎</div><div class="ssi-nm">Veneers</div></label>
+            <label class="ssi" onclick="selectSvc(this)"><input type="radio" name="svc" value="Root Canal"><div class="ssi-ic">🔧</div><div class="ssi-nm">Root Canal</div></label>
+            <label class="ssi" onclick="selectSvc(this)"><input type="radio" name="svc" value="Crowns & Bridges"><div class="ssi-ic">👑</div><div class="ssi-nm">Crowns &amp; Bridges</div></label>
+            <label class="ssi" onclick="selectSvc(this)"><input type="radio" name="svc" value="Pediatric Dentistry"><div class="ssi-ic">👶</div><div class="ssi-nm">Kids Dentistry</div></label>
+            <label class="ssi" onclick="selectSvc(this)"><input type="radio" name="svc" value="Consultation"><div class="ssi-ic">💬</div><div class="ssi-nm">Free Consultation</div></label>
+          </div>
+          <div class="form-group" style="margin-top:20px;">
+            <label class="form-label">Describe your dental concern (optional)</label>
+            <textarea class="form-textarea" id="concern" placeholder="e.g. Tooth pain, sensitivity, interested in whitening…" rows="3"></textarea>
+          </div>
+          <div class="booking-nav">
+            <span class="step-ind">Step 1 of 4</span>
+            <button class="btn btn-primary" onclick="nextStep(2)">Continue →</button>
+          </div>
+        </div>
+        <!-- Step 2 -->
+        <div class="bsection" id="step-2">
+          <h3 class="display-md" style="margin-bottom:6px;">Choose your date &amp; time</h3>
+          <p class="body-sm" style="margin-bottom:22px;">Select from the next 14 days. Sunday = clinic closed.</p>
+          <div class="form-group">
+            <label class="form-label">Preferred Date <span>*</span></label>
+            <div class="date-grid" id="dateGrid"></div>
+          </div>
+          <div class="form-group" style="margin-top:20px;" id="timeSection">
+            <label class="form-label">Available Time Slots <span>*</span></label>
+            <div class="time-grid" id="timeGrid">
+              <button class="time-btn" onclick="selTime(this)">9:00 AM</button>
+              <button class="time-btn" onclick="selTime(this)">9:30 AM</button>
+              <button class="time-btn unavailable" disabled>10:00 AM</button>
+              <button class="time-btn" onclick="selTime(this)">10:30 AM</button>
+              <button class="time-btn unavailable" disabled>11:00 AM</button>
+              <button class="time-btn" onclick="selTime(this)">11:30 AM</button>
+              <button class="time-btn" onclick="selTime(this)">1:00 PM</button>
+              <button class="time-btn" onclick="selTime(this)">1:30 PM</button>
+              <button class="time-btn" onclick="selTime(this)">2:00 PM</button>
+              <button class="time-btn unavailable" disabled>2:30 PM</button>
+              <button class="time-btn" onclick="selTime(this)">3:00 PM</button>
+              <button class="time-btn" onclick="selTime(this)">3:30 PM</button>
+              <button class="time-btn" onclick="selTime(this)">4:00 PM</button>
+              <button class="time-btn unavailable" disabled>4:30 PM</button>
+              <button class="time-btn" onclick="selTime(this)">5:00 PM</button>
+              <button class="time-btn" onclick="selTime(this)">5:30 PM</button>
+            </div>
+          </div>
+          <div class="booking-nav">
+            <button class="btn btn-outline" onclick="nextStep(1)">← Back</button>
+            <span class="step-ind">Step 2 of 4</span>
+            <button class="btn btn-primary" onclick="nextStep(3)">Continue →</button>
+          </div>
+        </div>
+        <!-- Step 3 -->
+        <div class="bsection" id="step-3">
+          <h3 class="display-md" style="margin-bottom:6px;">Your contact details</h3>
+          <p class="body-sm" style="margin-bottom:22px;">We'll send your confirmation and reminder to the details below.</p>
+          <div class="form-grid">
+            <div class="form-group"><label class="form-label">First Name <span>*</span></label><input type="text" class="form-input" id="firstName" placeholder="Ramesh" required></div>
+            <div class="form-group"><label class="form-label">Last Name <span>*</span></label><input type="text" class="form-input" id="lastName" placeholder="Sharma" required></div>
+            <div class="form-group"><label class="form-label">Email Address <span>*</span></label><input type="email" class="form-input" id="email" placeholder="ramesh@email.com" required></div>
+            <div class="form-group"><label class="form-label">Phone Number <span>*</span></label><input type="tel" class="form-input" id="phone" placeholder="+977-98X-XXX-XXXX" required></div>
+            <div class="form-group"><label class="form-label">Date of Birth</label><input type="date" class="form-input" id="dob"></div>
+            <div class="form-group">
+              <label class="form-label">Preferred Dentist</label>
+              <select class="form-select" id="prefDentist">
+                <option value="">No preference</option>
+                <option>Dr. Anil Shrestha</option>
+                <option>Dr. Priya Maharjan</option>
+                <option>Dr. Roshan Thapa</option>
+                <option>Dr. Sunita Gurung</option>
+              </select>
+            </div>
+            <div class="form-group full">
+              <label class="form-label">New or existing patient?</label>
+              <select class="form-select" id="patientType">
+                <option value="new">New Patient</option>
+                <option value="existing">Existing Patient</option>
+              </select>
+            </div>
+            <div class="form-group full">
+              <label class="form-label">Medical conditions / allergies (optional)</label>
+              <input type="text" class="form-input" id="medical" placeholder="e.g. Diabetes, penicillin allergy…">
+            </div>
+            <div class="form-group full" style="flex-direction:row;align-items:flex-start;gap:10px">
+              <input type="checkbox" id="consent" style="margin-top:3px;flex-shrink:0;accent-color:var(--sky-500);width:16px;height:16px">
+              <label for="consent" class="form-label" style="cursor:pointer;font-weight:400">I consent to Suyog Dental contacting me via email and SMS with appointment details and reminders.</label>
+            </div>
+          </div>
+          <div class="booking-nav">
+            <button class="btn btn-outline" onclick="nextStep(2)">← Back</button>
+            <span class="step-ind">Step 3 of 4</span>
+            <button class="btn btn-primary" onclick="submitBooking()">Review Booking →</button>
+          </div>
+        </div>
+        <!-- Step 4 -->
+        <div class="bsection" id="step-4">
+          <div class="conf-box">
+            <div class="conf-icon">🎉</div>
+            <h3 style="font-family:var(--font-display);font-size:1.45rem;font-weight:700;color:var(--slate-900);margin-bottom:5px">Booking Confirmed!</h3>
+            <p style="color:var(--slate-500);font-size:.87rem">A confirmation email has been sent to your inbox. Check spam if you don't see it within 5 minutes.</p>
+          </div>
+          <div class="conf-rows">
+            <div class="conf-row"><span class="conf-k">📋 Service</span><span class="conf-v" id="conf-service">—</span></div>
+            <div class="conf-row"><span class="conf-k">📅 Date</span><span class="conf-v" id="conf-date">—</span></div>
+            <div class="conf-row"><span class="conf-k">🕐 Time</span><span class="conf-v" id="conf-time">—</span></div>
+            <div class="conf-row"><span class="conf-k">👤 Patient</span><span class="conf-v" id="conf-name">—</span></div>
+            <div class="conf-row"><span class="conf-k">📧 Email</span><span class="conf-v" id="conf-email">—</span></div>
+            <div class="conf-row"><span class="conf-k">📍 Clinic</span><span class="conf-v">Suyog Dental, Thamel, Kathmandu</span></div>
+          </div>
+          <div style="background:var(--sky-50);border:1px solid var(--sky-200);border-radius:var(--radius-md);padding:18px;margin-bottom:22px">
+            <h4 style="font-size:.87rem;font-weight:700;color:var(--sky-800);margin-bottom:8px">📌 Before your visit</h4>
+            <ul style="font-size:.83rem;color:var(--sky-700);line-height:2;padding-left:16px;list-style:disc">
+              <li>Arrive 10 minutes early to complete paperwork</li>
+              <li>Bring a valid ID and any existing dental records</li>
+              <li>Avoid eating 2 hours before major procedures</li>
+              <li>Free parking available at clinic premises</li>
+            </ul>
+          </div>
+          <div class="booking-nav">
+            <button class="btn btn-outline" onclick="resetBooking()">Book Another</button>
+            <a href="tel:+977980000001" class="btn btn-primary">📞 Call Clinic</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ─── TESTIMONIALS ─── -->
+<section class="testimonials section" id="testimonials">
+  <div class="container">
+    <div class="fade-up" style="text-align:center">
+      <span class="label-pill">Patient Reviews</span>
+      <h2 class="display-lg" style="margin-bottom:14px;">What Our Patients <span class="text-gradient">Are Saying</span></h2>
+      <p class="body-lg" style="max-width:540px;margin:0 auto;">Real stories from real patients. Over 8,500 smiles transformed and counting.</p>
+    </div>
+    <div class="testi-grid">
+      <div class="testi-card fade-up delay-1">
+        <div class="verified">✓ Verified Patient</div>
+        <div class="testi-quote">"</div>
+        <p class="testi-text">I was terrified of dentists my whole life. Dr. Anil and his team made me feel completely at ease. My veneer treatment was painless and the results are absolutely stunning. I smile for photos for the first time in 10 years!</p>
+        <div class="testi-author">
+          <div class="testi-avatar"><img src="https://images.unsplash.com/photo-1531746020798-e6953c6e8e04?w=100&auto=format&fit=crop&q=80&crop=faces" alt="Sita Rana" loading="lazy"></div>
+          <div><div class="testi-stars">★★★★★</div><div class="testi-name">Sita Rana</div><div class="testi-role">Veneers · Kathmandu</div></div>
+        </div>
+      </div>
+      <div class="testi-card fade-up delay-2">
+        <div class="verified">✓ Verified Patient</div>
+        <div class="testi-quote">"</div>
+        <p class="testi-text">Got Invisalign with Dr. Priya. She was thorough, professional, and kept me updated throughout the 14-month treatment. My teeth are perfectly straight now and the clinic is immaculate.</p>
+        <div class="testi-author">
+          <div class="testi-avatar"><img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=100&auto=format&fit=crop&q=80&crop=faces" alt="Bikash Tamang" loading="lazy"></div>
+          <div><div class="testi-stars">★★★★★</div><div class="testi-name">Bikash Tamang</div><div class="testi-role">Invisalign · Patan</div></div>
+        </div>
+      </div>
+      <div class="testi-card fade-up delay-3">
+        <div class="verified">✓ Verified Patient</div>
+        <div class="testi-quote">"</div>
+        <p class="testi-text">Dr. Roshan performed my root canal and I literally felt nothing. Zero discomfort. The digital X-rays, modern equipment — this place is on par with clinics abroad. Highly recommended!</p>
+        <div class="testi-author">
+          <div class="testi-avatar"><img src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=100&auto=format&fit=crop&q=80&crop=faces" alt="Anita Shrestha" loading="lazy"></div>
+          <div><div class="testi-stars">★★★★★</div><div class="testi-name">Anita Shrestha</div><div class="testi-role">Root Canal · Bhaktapur</div></div>
+        </div>
+      </div>
+      <div class="testi-card fade-up delay-1">
+        <div class="verified">✓ Verified Patient</div>
+        <div class="testi-quote">"</div>
+        <p class="testi-text">My daughter was always scared of dentists until Dr. Sunita. She makes kids feel like they're playing! My daughter now actually looks forward to her checkups. That's a miracle in itself.</p>
+        <div class="testi-author">
+          <div class="testi-avatar"><img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=100&auto=format&fit=crop&q=80&crop=faces" alt="Meera Joshi" loading="lazy"></div>
+          <div><div class="testi-stars">★★★★★</div><div class="testi-name">Meera Joshi</div><div class="testi-role">Pediatric · Lalitpur</div></div>
+        </div>
+      </div>
+      <div class="testi-card fade-up delay-2">
+        <div class="verified">✓ Verified Patient</div>
+        <div class="testi-quote">"</div>
+        <p class="testi-text">Had two implants placed here after losing teeth in an accident. The process was explained clearly at every stage. The implants look completely natural. Worth every rupee.</p>
+        <div class="testi-author">
+          <div class="testi-avatar"><img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=100&auto=format&fit=crop&q=80&crop=faces" alt="Rajendra K.C." loading="lazy"></div>
+          <div><div class="testi-stars">★★★★★</div><div class="testi-name">Rajendra K.C.</div><div class="testi-role">Implants · Kathmandu</div></div>
+        </div>
+      </div>
+      <div class="testi-card fade-up delay-3">
+        <div class="verified">✓ Verified Patient</div>
+        <div class="testi-quote">"</div>
+        <p class="testi-text">The teeth whitening was fast, effective, and comfortable. 8 shades lighter in one session! I also appreciated honest advice rather than pushing unnecessary treatments. True professionals.</p>
+        <div class="testi-author">
+          <div class="testi-avatar"><img src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=100&auto=format&fit=crop&q=80&crop=faces" alt="Prashant Ghimire" loading="lazy"></div>
+          <div><div class="testi-stars">★★★★★</div><div class="testi-name">Prashant Ghimire</div><div class="testi-role">Whitening · Boudha</div></div>
+        </div>
+      </div>
+    </div>
+    <div class="rating-summary fade-up">
+      <div class="rating-strip">
+        <div class="rs-item"><div class="rs-num">4.97</div><div style="color:#f59e0b;font-size:1rem;margin:3px 0">★★★★★</div><div class="rs-label">Average Rating</div></div>
+        <div class="rs-item"><div class="rs-num">2,400+</div><div class="rs-label" style="margin-top:4px">Google Reviews</div></div>
+        <div class="rs-item"><div class="rs-num">98%</div><div class="rs-label" style="margin-top:4px">Would Recommend</div></div>
+        <div class="rs-item"><div class="rs-num">8,500+</div><div class="rs-label" style="margin-top:4px">Smiles Transformed</div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ─── GALLERY ─── -->
+<section class="gallery section" id="gallery">
+  <div class="container">
+    <div class="fade-up" style="text-align:center">
+      <span class="label-pill">Before &amp; After Gallery</span>
+      <h2 class="display-lg" style="margin-bottom:14px;">Real Smile <span class="text-gradient">Transformations</span></h2>
+      <p class="body-lg" style="max-width:540px;margin:0 auto;">Authentic results from real Suyog Dental patients. Every smile tells a story of confidence restored.</p>
+    </div>
+    <div class="gallery-grid">
+      <div class="gal-item fade-up delay-1">
+        <img src="https://images.unsplash.com/photo-1581071517753-c1e6d7e5c2ae?w=600&auto=format&fit=crop&q=80" alt="Teeth whitening before and after" loading="lazy">
+        <div class="ba-label-wrap"><span class="ba-pill">Before</span><span class="ba-pill">After</span></div>
+        <div class="gal-overlay"><div class="gal-text">✨ Teeth Whitening<span>8 shades lighter in 1 session</span></div></div>
+      </div>
+      <div class="gal-item fade-up delay-2">
+        <img src="https://images.unsplash.com/photo-1598256989800-fe5f95da9787?w=600&auto=format&fit=crop&q=80" alt="Invisalign results" loading="lazy">
+        <div class="ba-label-wrap"><span class="ba-pill">Before</span><span class="ba-pill">After</span></div>
+        <div class="gal-overlay"><div class="gal-text">📐 Invisalign<span>14 months to perfect alignment</span></div></div>
+      </div>
+      <div class="gal-item fade-up delay-3">
+        <img src="https://images.unsplash.com/photo-1629909615957-be38d48fbbe4?w=600&auto=format&fit=crop&q=80" alt="Porcelain veneers transformation" loading="lazy">
+        <div class="ba-label-wrap"><span class="ba-pill">Before</span><span class="ba-pill">After</span></div>
+        <div class="gal-overlay"><div class="gal-text">💎 Porcelain Veneers<span>6 veneers, complete transformation</span></div></div>
+      </div>
+      <div class="gal-item fade-up delay-1">
+        <img src="https://images.unsplash.com/photo-1606811971618-4486d14f3f99?w=600&auto=format&fit=crop&q=80" alt="Dental crown restoration" loading="lazy">
+        <div class="ba-label-wrap"><span class="ba-pill">Before</span><span class="ba-pill">After</span></div>
+        <div class="gal-overlay"><div class="gal-text">👑 Dental Crown<span>Chipped tooth fully restored</span></div></div>
+      </div>
+      <div class="gal-item fade-up delay-2">
+        <img src="https://images.unsplash.com/photo-1609840114035-3c981b782dfe?w=600&auto=format&fit=crop&q=80" alt="Dental implant result" loading="lazy">
+        <div class="ba-label-wrap"><span class="ba-pill">Before</span><span class="ba-pill">After</span></div>
+        <div class="gal-overlay"><div class="gal-text">🔩 Dental Implant<span>Single tooth replacement</span></div></div>
+      </div>
+      <div class="gal-item fade-up delay-3">
+        <img src="https://images.unsplash.com/photo-1581071517753-c1e6d7e5c2ae?w=600&auto=format&fit=crop&q=80&fp-y=.4" alt="Full smile makeover" loading="lazy">
+        <div class="ba-label-wrap"><span class="ba-pill">Before</span><span class="ba-pill">After</span></div>
+        <div class="gal-overlay"><div class="gal-text">😁 Full Smile Makeover<span>Whitening + Veneers + Shaping</span></div></div>
+      </div>
+    </div>
+    <div style="text-align:center;margin-top:36px">
+      <p class="body-sm" style="margin-bottom:14px">*All results are from real Suyog Dental patients with their consent.</p>
+      <a href="#booking" class="btn btn-primary">Start Your Transformation →</a>
+    </div>
+  </div>
+</section>
+
+<!-- ─── PRICING ─── -->
+<section class="pricing section" id="pricing">
+  <div class="container">
+    <div class="fade-up" style="text-align:center">
+      <span class="label-pill">Transparent Pricing</span>
+      <h2 class="display-lg" style="margin-bottom:14px;">Honest Prices, <span class="text-gradient">Exceptional Value</span></h2>
+      <p class="body-lg" style="max-width:560px;margin:0 auto;">No hidden fees. No surprise bills. Premium dental care that's transparent and accessible.</p>
+    </div>
+    <div class="pricing-grid">
+      <div class="pricing-card fade-up delay-1">
+        <div class="p-name">Essential Care</div>
+        <div class="p-desc">Routine dental maintenance and preventive care for a healthy smile.</div>
+        <div class="p-price"><span class="p-currency">NPR</span><span class="p-amount">2,500</span><span class="p-period">/visit</span></div>
+        <div class="p-features">
+          <div class="p-feat"><span class="p-check">✓</span> Full dental examination</div>
+          <div class="p-feat"><span class="p-check">✓</span> Professional cleaning &amp; polishing</div>
+          <div class="p-feat"><span class="p-check">✓</span> Digital X-rays (2 films)</div>
+          <div class="p-feat"><span class="p-check">✓</span> Oral cancer screening</div>
+          <div class="p-feat"><span class="p-check">✓</span> Fluoride treatment</div>
+          <div class="p-feat"><span class="p-cross">✗</span> Cosmetic consultation</div>
+          <div class="p-feat"><span class="p-cross">✗</span> Priority appointments</div>
+        </div>
+        <a href="#booking" class="btn btn-outline btn-block">Book This Plan</a>
+      </div>
+      <div class="pricing-card featured fade-up delay-2">
+        <div class="p-badge">⭐ Most Popular</div>
+        <div class="p-name">Smile Premium</div>
+        <div class="p-desc">Comprehensive care combining preventive treatment with cosmetic benefits.</div>
+        <div class="p-price"><span class="p-currency">NPR</span><span class="p-amount">12,000</span><span class="p-period">/package</span></div>
+        <div class="p-features">
+          <div class="p-feat"><span class="p-check">✓</span> Everything in Essential Care</div>
+          <div class="p-feat"><span class="p-check">✓</span> Professional whitening session</div>
+          <div class="p-feat"><span class="p-check">✓</span> Custom take-home tray</div>
+          <div class="p-feat"><span class="p-check">✓</span> 3 follow-up checkups</div>
+          <div class="p-feat"><span class="p-check">✓</span> Cosmetic consultation included</div>
+          <div class="p-feat"><span class="p-check">✓</span> Priority scheduling</div>
+          <div class="p-feat"><span class="p-cross">✗</span> Restorative procedures</div>
+        </div>
+        <a href="#booking" class="btn btn-primary btn-block">Book This Plan</a>
+      </div>
+      <div class="pricing-card fade-up delay-3">
+        <div class="p-name">Smile Elite</div>
+        <div class="p-desc">The ultimate experience for a complete smile transformation.</div>
+        <div class="p-price"><span class="p-currency">NPR</span><span class="p-amount">Custom</span></div>
+        <div class="p-features">
+          <div class="p-feat"><span class="p-check">✓</span> Everything in Smile Premium</div>
+          <div class="p-feat"><span class="p-check">✓</span> Full smile design consultation</div>
+          <div class="p-feat"><span class="p-check">✓</span> Digital smile preview</div>
+          <div class="p-feat"><span class="p-check">✓</span> Porcelain veneers (per tooth)</div>
+          <div class="p-feat"><span class="p-check">✓</span> Orthodontic assessment</div>
+          <div class="p-feat"><span class="p-check">✓</span> 1-year warranty on work</div>
+          <div class="p-feat"><span class="p-check">✓</span> Dedicated care coordinator</div>
+        </div>
+        <a href="#booking" class="btn btn-outline btn-block">Get Free Quote</a>
+      </div>
+    </div>
+    <div class="fade-up" style="text-align:center;margin-top:32px;padding:22px;background:var(--sky-50);border-radius:var(--radius-lg);border:1px solid var(--sky-200)">
+      <p style="font-size:.88rem;color:var(--sky-800)">💳 <strong>Flexible Payment Plans</strong> · 0% EMI up to 12 months · Insurance claims assisted · Corporate packages · Free consultation for new patients</p>
+    </div>
+  </div>
+</section>
+
+<!-- ─── FAQ ─── -->
+<section class="faq section" id="faq">
+  <div class="container">
+    <div class="fade-up" style="text-align:center">
+      <span class="label-pill">FAQ</span>
+      <h2 class="display-lg" style="margin-bottom:14px;">Got Questions? <span class="text-gradient">We Have Answers</span></h2>
+    </div>
+    <div class="faq-list">
+      <div class="faq-item fade-up"><button class="faq-q" onclick="toggleFAQ(this)">Is teeth whitening safe? How long does it last?<span class="faq-ic">+</span></button><div class="faq-a"><p>Professional whitening at Suyog Dental is completely safe when performed by our trained dentists. Results typically last 12–24 months depending on diet and lifestyle. We provide take-home maintenance kits to prolong your results.</p></div></div>
+      <div class="faq-item fade-up delay-1"><button class="faq-q" onclick="toggleFAQ(this)">Are dental implants painful? How long does healing take?<span class="faq-ic">+</span></button><div class="faq-a"><p>Implant surgery is performed under local anesthesia — no pain during the procedure. Mild discomfort for 3–5 days after is manageable with over-the-counter medication. Full osseointegration takes 3–6 months, after which the permanent crown is placed.</p></div></div>
+      <div class="faq-item fade-up delay-2"><button class="faq-q" onclick="toggleFAQ(this)">How much does Invisalign cost compared to traditional braces?<span class="faq-ic">+</span></button><div class="faq-a"><p>Metal braces from NPR 45,000, ceramic from NPR 65,000. Invisalign from NPR 90,000 for minor corrections to NPR 1,80,000 for comprehensive treatment. EMI payment options available for all orthodontic treatments.</p></div></div>
+      <div class="faq-item fade-up delay-3"><button class="faq-q" onclick="toggleFAQ(this)">Do you treat dental anxiety? What sedation options are available?<span class="faq-ic">+</span></button><div class="faq-a"><p>Absolutely. We specialize in anxiety-free dentistry. We offer nitrous oxide (laughing gas) for mild anxiety, plus oral sedation for moderate-severe cases. Our staff are trained in anxiety management and clear communication throughout all procedures.</p></div></div>
+      <div class="faq-item fade-up"><button class="faq-q" onclick="toggleFAQ(this)">How often should I visit the dentist?<span class="faq-ic">+</span></button><div class="faq-a"><p>Every 6 months for routine checkup and cleaning. Patients with gum disease or ongoing orthodontic treatment may need visits every 3–4 months. Children should have their first visit by their first birthday or when the first tooth appears.</p></div></div>
+      <div class="faq-item fade-up delay-1"><button class="faq-q" onclick="toggleFAQ(this)">Do you accept dental insurance?<span class="faq-ic">+</span></button><div class="faq-a"><p>Yes — we work with major providers in Nepal including Shikhar Insurance, Nepal Insurance, and several corporate health plans. We also help with international insurance documentation for expat patients, and offer 0% EMI for uncovered treatments.</p></div></div>
+      <div class="faq-item fade-up delay-2"><button class="faq-q" onclick="toggleFAQ(this)">What happens at my first visit to Suyog Dental?<span class="faq-ic">+</span></button><div class="faq-a"><p>Your first visit takes 60–75 minutes. Starts with a warm welcome and health history. Your dentist will perform a comprehensive examination including digital X-rays, gum health assessment, and oral cancer screening. You'll receive a full treatment plan with clear pricing — no pressure, your pace entirely.</p></div></div>
+    </div>
+  </div>
+</section>
+
+<!-- ─── EMERGENCY ─── -->
+<section class="emergency section-sm" id="emergency">
+  <div class="container">
+    <div class="emer-inner">
+      <div style="font-size:2.6rem;margin-bottom:14px">🚨</div>
+      <h2>Dental Emergency? We're Here</h2>
+      <p>Severe tooth pain, knocked-out tooth, broken crown, abscess, or dental trauma? Don't wait. Our emergency line is available 7 days a week. Same-day appointments guaranteed.</p>
+      <div class="emer-actions">
+        <a href="tel:+977980000001" class="btn-emer">📞 Call Emergency Line</a>
+        <a href="https://wa.me/977980000001" class="btn-emer btn-emer-ghost" target="_blank" rel="noopener">💬 WhatsApp Us Now</a>
+      </div>
+      <p style="color:rgba(255,255,255,.55);font-size:.78rem;margin-top:22px">Emergency hotline: +977-980-000-001 · Mon–Sat 7AM–9PM, Sun 9AM–5PM</p>
+    </div>
+  </div>
+</section>
+
+<!-- ─── CONTACT ─── -->
+<section class="contact section" id="contact">
+  <div class="container">
+    <div class="fade-up" style="text-align:center;margin-bottom:56px">
+      <span class="label-pill">Find Us</span>
+      <h2 class="display-lg" style="margin-bottom:14px">Visit Our <span class="text-gradient">Clinic</span></h2>
+      <p class="body-lg" style="max-width:540px;margin:0 auto">Conveniently located in Thamel, Kathmandu — with ample parking and easy access from all major areas.</p>
+    </div>
+    <div class="contact-grid">
+      <div>
+        <div class="map-wrap fade-up" style="margin-bottom:28px">
+          <img src="https://images.unsplash.com/photo-1569511166595-2c8a2e38f5b3?w=700&auto=format&fit=crop&q=80" alt="Thamel Kathmandu neighborhood map area" loading="lazy">
+          <div class="map-pin-overlay">
+            <div style="font-size:2.2rem">📍</div>
+            <div class="map-card">
+              <div class="map-card-name">Suyog Dental</div>
+              <div class="map-card-addr">Thamel Marg, Kathmandu 44600, Nepal</div>
+              <a href="https://maps.google.com" target="_blank" rel="noopener" class="map-card-link">Open in Google Maps →</a>
+            </div>
+          </div>
+        </div>
+        <div class="contact-details fade-up delay-1">
+          <div class="ci"><div class="ci-icon">📍</div><div class="ci-text"><h4>Our Address</h4><p>Suyog Dental<br>Thamel Marg, Near Garden of Dreams<br>Kathmandu 44600, Nepal</p></div></div>
+          <div class="ci"><div class="ci-icon">📞</div><div class="ci-text"><h4>Phone</h4><a href="tel:+977980000001">+977-980-000-001</a><br><a href="tel:+97714444444">+977-1-444-4444 (Landline)</a></div></div>
+          <div class="ci"><div class="ci-icon">✉️</div><div class="ci-text"><h4>Email</h4><a href="mailto:info@suyogdental.com.np">info@suyogdental.com.np</a><br><a href="mailto:appointments@suyogdental.com.np">appointments@suyogdental.com.np</a></div></div>
+          <div class="ci"><div class="ci-icon">🕐</div><div class="ci-text"><h4>Opening Hours</h4><p>Mon–Fri: 8:00 AM – 7:00 PM<br>Saturday: 8:00 AM – 5:00 PM<br>Sunday: 10:00 AM – 3:00 PM<br><span style="color:var(--sky-600);font-weight:600">Emergency: 7 days / week</span></p></div></div>
+        </div>
+      </div>
+      <div class="contact-form-wrap fade-up delay-2">
+        <h3>Send Us a Message</h3>
+        <form onsubmit="submitContact(event)">
+          <div class="form-grid">
+            <div class="form-group"><label class="form-label">Your Name <span>*</span></label><input type="text" class="form-input" placeholder="Full name" required></div>
+            <div class="form-group"><label class="form-label">Phone <span>*</span></label><input type="tel" class="form-input" placeholder="+977-9XX-XXXX" required></div>
+            <div class="form-group full"><label class="form-label">Email <span>*</span></label><input type="email" class="form-input" placeholder="your@email.com" required></div>
+            <div class="form-group full">
+              <label class="form-label">Subject</label>
+              <select class="form-select">
+                <option>General Enquiry</option>
+                <option>Appointment Request</option>
+                <option>Insurance Query</option>
+                <option>Treatment Information</option>
+                <option>Complaint / Feedback</option>
+                <option>Corporate Partnership</option>
+              </select>
+            </div>
+            <div class="form-group full"><label class="form-label">Message <span>*</span></label><textarea class="form-textarea" placeholder="How can we help you?" rows="4" required></textarea></div>
+          </div>
+          <button type="submit" class="btn btn-primary" style="width:100%;margin-top:14px">Send Message 📩</button>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ─── FOOTER ─── -->
+<footer class="footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand-wrap">
+        <div class="footer-logo">
+          <div class="footer-logo-mark">🦷</div>
+          <div class="footer-logo-text">Suyog<span> Dental</span></div>
+        </div>
+        <p class="footer-desc">Premium dental care in the heart of Kathmandu — where artistry meets dental science to create smiles that last a lifetime.</p>
+        <div class="footer-social">
+          <a href="#" class="soc-btn fb" aria-label="Facebook">f</a>
+          <a href="#" class="soc-btn ig" aria-label="Instagram">📷</a>
+          <a href="#" class="soc-btn tt" aria-label="TikTok">♪</a>
+          <a href="#" class="soc-btn yt" aria-label="YouTube">▶</a>
+        </div>
+        <div style="display:flex;gap:7px;flex-wrap:wrap;margin-top:10px">
+          <span style="background:rgba(255,255,255,.07);border:1px solid rgba(255,255,255,.1);border-radius:6px;padding:3px 9px;font-size:.7rem;color:var(--slate-400)">🏅 ISO Certified</span>
+          <span style="background:rgba(255,255,255,.07);border:1px solid rgba(255,255,255,.1);border-radius:6px;padding:3px 9px;font-size:.7rem;color:var(--slate-400)">🦷 NDA Member</span>
+        </div>
+      </div>
+      <div>
+        <h4 class="footer-h">Quick Links</h4>
+        <ul class="footer-links">
+          <li><a href="#about" class="footer-link">About Our Clinic</a></li>
+          <li><a href="#services" class="footer-link">Dental Services</a></li>
+          <li><a href="#team" class="footer-link">Meet the Team</a></li>
+          <li><a href="#gallery" class="footer-link">Before &amp; After</a></li>
+          <li><a href="#pricing" class="footer-link">Pricing</a></li>
+          <li><a href="#testimonials" class="footer-link">Patient Reviews</a></li>
+          <li><a href="#faq" class="footer-link">FAQs</a></li>
+          <li><a href="#booking" class="footer-link" style="color:var(--sky-400)">📅 Book Appointment</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4 class="footer-h">Services</h4>
+        <ul class="footer-links">
+          <li><a href="#services" class="footer-link">Dental Cleaning</a></li>
+          <li><a href="#services" class="footer-link">Teeth Whitening</a></li>
+          <li><a href="#services" class="footer-link">Dental Implants</a></li>
+          <li><a href="#services" class="footer-link">Orthodontics</a></li>
+          <li><a href="#services" class="footer-link">Porcelain Veneers</a></li>
+          <li><a href="#services" class="footer-link">Root Canal</a></li>
+          <li><a href="#services" class="footer-link">Crowns &amp; Bridges</a></li>
+          <li><a href="#services" class="footer-link">Smile Makeover</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4 class="footer-h">Opening Hours</h4>
+        <div class="hours-list">
+          <div class="hr-row today"><span class="hr-day">Friday (Today)</span><span class="hr-time">8AM–7PM</span></div>
+          <div class="hr-row"><span class="hr-day">Saturday</span><span class="hr-time">8AM–5PM</span></div>
+          <div class="hr-row"><span class="hr-day">Sunday</span><span class="hr-time">10AM–3PM</span></div>
+          <div class="hr-row"><span class="hr-day">Mon–Thu</span><span class="hr-time">8AM–7PM</span></div>
+        </div>
+        <div class="footer-emer">
+          <div class="footer-emer-label">🚨 Emergency Dental</div>
+          <a href="tel:+977980000001">+977-980-000-001</a>
+          <small>7 days/week emergency line</small>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p class="footer-copy">© 2024 Suyog Dental. All rights reserved. | Thamel, Kathmandu, Nepal</p>
+      <div class="footer-legal">
+        <a href="#">Privacy Policy</a>
+        <a href="#">Terms of Service</a>
+        <a href="#">Cookies</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<!-- ─── FLOATING BUTTONS ─── -->
+<div class="floating-actions" aria-label="Quick contact">
+  <a href="https://wa.me/977980000001" class="fab fab-wa" target="_blank" rel="noopener" aria-label="WhatsApp">💬</a>
+  <a href="tel:+977980000001" class="fab fab-ph" aria-label="Call clinic">📞</a>
+</div>
+
+<script>
+// NAV SCROLL
+const nav=document.getElementById('navbar');
+window.addEventListener('scroll',()=>nav.classList.toggle('scrolled',window.scrollY>40),{passive:true});
+
+// HAMBURGER
+const ham=document.getElementById('hamburger'),mob=document.getElementById('mobileMenu');
+ham.addEventListener('click',()=>{const o=mob.classList.toggle('open');ham.classList.toggle('open',o);ham.setAttribute('aria-expanded',o)});
+mob.querySelectorAll('a').forEach(l=>l.addEventListener('click',()=>{mob.classList.remove('open');ham.classList.remove('open')}));
+
+// SCROLL ANIMATIONS
+const obs=new IntersectionObserver(entries=>entries.forEach(e=>{if(e.isIntersecting)e.target.classList.add('visible')}),{threshold:.1});
+document.querySelectorAll('.fade-up').forEach(el=>obs.observe(el));
+
+// FAQ
+function toggleFAQ(btn){const item=btn.closest('.faq-item'),o=item.classList.contains('open');document.querySelectorAll('.faq-item.open').forEach(i=>i.classList.remove('open'));if(!o)item.classList.add('open')}
+
+// DATE GRID
+(function(){const g=document.getElementById('dateGrid'),days=['Sun','Mon','Tue','Wed','Thu','Fri','Sat'],today=new Date();
+for(let i=0;i<14;i++){const d=new Date(today);d.setDate(today.getDate()+i);
+const b=document.createElement('button');b.className='date-btn';
+if(d.getDay()===0){b.classList.add('disabled');b.disabled=true}
+b.innerHTML=`<div class="date-day">${days[d.getDay()]}</div><div class="date-num">${d.getDate()}</div>`;
+b.onclick=function(){selDate(this)};g.appendChild(b)}})();
+
+// BOOKING STATE
+let BD={service:'',date:'',time:'',firstName:'',lastName:'',email:''};
+
+function selectSvc(lbl){document.querySelectorAll('.ssi').forEach(i=>i.classList.remove('selected'));lbl.classList.add('selected');BD.service=lbl.querySelector('input').value}
+function selDate(btn){document.querySelectorAll('.date-btn').forEach(b=>b.classList.remove('selected'));btn.classList.add('selected');BD.date=btn.querySelector('.date-num').textContent+' (selected)';document.querySelectorAll('.time-btn:not(.unavailable)').forEach(b=>b.classList.remove('selected'));BD.time=''}
+function selTime(btn){document.querySelectorAll('.time-btn').forEach(b=>b.classList.remove('selected'));btn.classList.add('selected');BD.time=btn.textContent.trim()}
+
+function nextStep(step){
+  if(step===2&&!BD.service){alert('Please select a service to continue.');return}
+  if(step===3&&(!BD.date||!BD.time)){alert('Please select a date and time slot.');return}
+  document.querySelectorAll('.bsection').forEach(s=>s.classList.remove('active'));
+  document.getElementById('step-'+step).classList.add('active');
+  document.querySelectorAll('.btab').forEach((t,i)=>t.classList.toggle('active',i+1===step));
+}
+
+function submitBooking(){
+  const fn=document.getElementById('firstName').value.trim(),ln=document.getElementById('lastName').value.trim(),em=document.getElementById('email').value.trim(),ph=document.getElementById('phone').value.trim(),con=document.getElementById('consent').checked;
+  if(!fn||!ln||!em||!ph){alert('Please fill in all required fields.');return}
+  if(!con){alert('Please provide your consent to continue.');return}
+  BD.firstName=fn;BD.lastName=ln;BD.email=em;
+  document.getElementById('conf-service').textContent=BD.service||'Free Consultation';
+  document.getElementById('conf-date').textContent=BD.date||'To be confirmed';
+  document.getElementById('conf-time').textContent=BD.time||'To be confirmed';
+  document.getElementById('conf-name').textContent=fn+' '+ln;
+  document.getElementById('conf-email').textContent=em;
+  nextStep(4);
+}
+
+function resetBooking(){BD={service:'',date:'',time:'',firstName:'',lastName:'',email:''};document.querySelectorAll('.ssi').forEach(i=>i.classList.remove('selected'));document.querySelectorAll('.date-btn').forEach(b=>b.classList.remove('selected'));document.querySelectorAll('.time-btn').forEach(b=>b.classList.remove('selected'));document.getElementById('concern').value='';['firstName','lastName','email','phone','medical'].forEach(id=>document.getElementById(id).value='');document.getElementById('consent').checked=false;nextStep(1)}
+
+// CONTACT FORM
+function submitContact(e){e.preventDefault();const btn=e.target.querySelector('button[type=submit]');btn.textContent='✓ Message Sent!';btn.style.background='linear-gradient(135deg,#22c55e,#16a34a)';setTimeout(()=>{btn.textContent='Send Message 📩';btn.style.background='';e.target.reset()},4000)}
+
+// SMOOTH SCROLL
+document.querySelectorAll('a[href^="#"]').forEach(a=>a.addEventListener('click',e=>{const t=document.querySelector(a.getAttribute('href'));if(t){e.preventDefault();t.scrollIntoView({behavior:'smooth',block:'start'})}}));
+</script>
+</body>
+</html>
